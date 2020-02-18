@@ -1,0 +1,4 @@
+{
+    "editor.defaultFormatter": "peakchen90.vue-beautify",
+    "editor.formatOnSave": true
+}
