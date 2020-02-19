@@ -15,9 +15,7 @@
       <nuxt-link to="/#" class="navlink deep-purple--text text--darken-3">
           About
       </nuxt-link>
-      <nuxt-link to="/#" class="contact-link pink accent-2 white--text">
-          Contact Us
-      </nuxt-link>
+      <v-btn rounded depressed color="primary" class="text-none">Testing rounded button</v-btn>
     </v-app-bar>
     <v-content>
       <v-container>
@@ -33,7 +31,7 @@
       <div class="leftside">
         <img src="https://via.placeholder.com/130x80" class="footer-logo" alt="NearPeer Logo">
         <ul class="footer-links">
-          
+
           <nuxt-link to="/#">
             <li>Higher Enrollment</li>
           </nuxt-link>
@@ -52,7 +50,7 @@
           <v-icon color="white" size="24px">fab fa-facebook-f</v-icon>
           <v-icon color="white" size="24px">fab fa-instagram</v-icon>
       </div>
-      
+
 
       <div class="copyrightline">Copyright {{ new Date().getFullYear() }} &copy; Nearpeer</div>
     </v-footer>
@@ -63,7 +61,7 @@
 export default {
   data () {
     return {
-      
+
     }
   }
 }
