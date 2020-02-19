@@ -1,4 +1,10 @@
 {
-    "editor.defaultFormatter": "peakchen90.vue-beautify",
-    "editor.formatOnSave": true
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "vetur.validation.template": true,
+  "editor.codeActionsOnSave": 
+  {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
