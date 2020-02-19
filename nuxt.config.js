@@ -6,6 +6,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
     titleTemplate: "%s - " + process.env.npm_package_name,
     title: process.env.npm_package_name || "Nearpeer.com",
     meta: [
@@ -82,6 +85,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };
