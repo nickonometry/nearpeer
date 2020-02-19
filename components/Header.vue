@@ -1,10 +1,13 @@
 <template>
   <v-app-bar fixed app class="white" flat>
-    <img
-      src="https://via.placeholder.com/200x50"
-      class="header-logo"
+    <nuxt-link
+      tag="img"
       alt="NearPeer Logo"
-    />
+      src="https://via.placeholder.com/200x50"
+      to="/"
+      style="cursor: pointer;"
+    >
+    </nuxt-link>
     <v-spacer />
     <nuxt-link
       to="/higher-enrollment"
