@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar fixed app class="white">
-      <img src="https://via.placeholder.com/200x50?text=NearPeer+Logo" class="logo" alt="NearPeer Logo">
+      <img src="https://via.placeholder.com/200x50" class="header-logo" alt="NearPeer Logo">
       <v-spacer />
       <div class="navlink deep-purple--text text--darken-3 active">
         Higher Enrollment
@@ -25,10 +25,36 @@
       </v-container>
     </v-content>
     <v-footer
-      :fixed="fixed"
+      absolute
+      :height="300"
       app
+      class="white--text deep-purple darken-3 footer-area"
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <div class="leftside">
+        <img src="https://via.placeholder.com/130x80" class="footer-logo" alt="NearPeer Logo">
+        <ul class="footer-links">
+          
+          <nuxt-link to="/#">
+            <li>Higher Enrollment</li>
+          </nuxt-link>
+          <nuxt-link to="/#">
+            <li>Student Success</li>
+          </nuxt-link>
+          <nuxt-link to="/#">
+            <li>What is Nearpeer?</li>
+          </nuxt-link>
+          <nuxt-link to="/#">
+            <li>About</li>
+          </nuxt-link>
+        </ul>
+      </div>
+      <div class="rightside">
+          <v-icon color="white" size="24px">fab fa-facebook-f</v-icon>
+          <v-icon color="white" size="24px">fab fa-instagram</v-icon>
+      </div>
+      
+
+      <div class="copyrightline">Copyright {{ new Date().getFullYear() }} &copy; Nearpeer</div>
     </v-footer>
   </v-app>
 </template>
@@ -37,7 +63,7 @@
 export default {
   data () {
     return {
-      fixed: false,
+      
     }
   }
 }
@@ -63,5 +89,49 @@ export default {
   font-size: 13px;
   border-radius: 20px;
   margin-left: 15px;
+}
+
+.footer-area{
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  .leftside{
+    display: flex;
+    align-items: flex-start;
+    .footer-logo{
+      padding-right:60px;
+    }
+    .footer-links{
+      list-style: none;
+      font-size: 13px;
+      letter-spacing: 0.03em;
+      margin-top: -7px;
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+      li{
+        padding: 3px 7px;
+        margin: 7px 0;
+        &:hover{
+          background-color:#FF4081;
+        }
+      }
+    }
+  }
+  .rightside{
+    i:not(:last-child){
+      padding:0 10px;
+    }
+    i:last-child{
+      padding-left: 10px;
+    }
+  }
+  .copyrightline{
+    bottom: 30px;
+    left: 30px;
+    font-size: 11px;
+    position: absolute;
+  }
 }
 </style>
