@@ -15,7 +15,7 @@
       <nuxt-link to="/#" class="navlink deep-purple--text text--darken-3">
           About
       </nuxt-link>
-      <v-btn rounded depressed color="primary" class="text-none">Testing rounded button</v-btn>
+      <v-btn rounded depressed color="primary">Testing rounded button</v-btn>
     </v-app-bar>
     <v-content>
       <v-container>
