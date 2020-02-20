@@ -1,5 +1,5 @@
 <template>
-  <v-footer absolute :height="300" app class="white--text deep-purple darken-3 footer-area">
+  <v-footer absolute :height="315" app class="white--text footer-area" paddless>
     <div class="leftside">
       <img
         src="~assets/images/nearpeer_logo_tall_white.svg"
@@ -21,16 +21,9 @@
         </nuxt-link>
       </ul>
     </div>
-    <div class="rightside">
-      <v-btn class="ma-2" text icon color="white" href="https://www.facebook.com">
-        <v-icon size="24px">fab fa-facebook-f</v-icon>
-      </v-btn>
-      <v-btn class="ma-2" text icon color="white" href="https://www.instagram.com">
-        <v-icon size="24px">fab fa-instagram</v-icon>
-      </v-btn>
+    <div class="footer-bottom grey darken-4">
+      <div class="copyrightline">Copyright {{ new Date().getFullYear() }} &copy; Nearpeer</div>
     </div>
-
-    <div class="copyrightline">Copyright {{ new Date().getFullYear() }} &copy; Nearpeer</div>
   </v-footer>
 </template>
 
@@ -40,9 +33,12 @@ export default {};
 
 <style lang="scss" scoped>
 .footer-area {
+  padding: 30px 45px;
+  align-items: flex-start;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 30px 45px;
+  background-color: #292929;
+
   .leftside {
     display: flex;
     align-items: flex-start;
@@ -68,11 +64,16 @@ export default {};
       }
     }
   }
-  .copyrightline {
-    bottom: 45px;
-    left: 45px;
+  .footer-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 45px;
     font-size: 11px;
     position: absolute;
+    height: 68px;
+    display: flex;
+    align-items: center;
   }
 }
 </style>
