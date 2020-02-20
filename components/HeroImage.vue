@@ -2,7 +2,7 @@
 
 <template>
   <div class="hero-container">
-    <img src="/images/homepage-hero/hero1.jpg" />
+    <v-img src="/images/homepage-hero/hero1.jpg" aspect-ratio="3.2"></v-img>
   </div>
 </template>
 
@@ -12,7 +12,8 @@ export default {};
 
 <style lang="scss" scoped>
 .hero-container {
-  height: 600px;
+  height: 100%;
+  max-height: 600px;
   background: #4611a9;
   position: relative;
 
