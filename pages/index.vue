@@ -21,11 +21,17 @@
         <img src="https://via.placeholder.com/400x400" />
       </div>
     </section>
+    <CallToAction />
   </div>
 </template>
 
 <script>
-export default {};
+import CallToAction from "../components/CallToAction";
+export default {
+  components: {
+    CallToAction
+  }
+};
 </script>
 
 <style lang="scss" scoped>
