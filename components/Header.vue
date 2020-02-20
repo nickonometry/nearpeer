@@ -3,33 +3,25 @@
     <nuxt-link
       tag="img"
       alt="NearPeer Logo"
-      src="https://via.placeholder.com/200x50"
+      src="/images/nearpeer_logo.svg"
       to="/"
       style="cursor: pointer;"
-    >
-    </nuxt-link>
+      class="header-logo"
+    ></nuxt-link>
     <v-spacer />
     <nuxt-link
       to="/higher-enrollment"
       class="navlink deep-purple--text text--darken-3"
-    >
-      Higher Enrollment
-    </nuxt-link>
+    >Higher Enrollment</nuxt-link>
     <nuxt-link
       to="/student-success"
       class="navlink deep-purple--text text--darken-3"
-    >
-      Student Success
-    </nuxt-link>
+    >Student Success</nuxt-link>
     <nuxt-link
       to="/what-is-near-peer"
       class="navlink deep-purple--text text--darken-3"
-    >
-      What is NearPeer?
-    </nuxt-link>
-    <nuxt-link to="/about" class="navlink deep-purple--text text--darken-3">
-      About
-    </nuxt-link>
+    >What is NearPeer?</nuxt-link>
+    <nuxt-link to="/about" class="navlink deep-purple--text text--darken-3">About</nuxt-link>
     <v-btn rounded depressed color="primary">Testing rounded button</v-btn>
   </v-app-bar>
 </template>
@@ -62,5 +54,8 @@ export default {};
   border-radius: 20px;
   margin-left: 15px;
   text-decoration: none;
+}
+.header-logo {
+  height: 30px;
 }
 </style>
