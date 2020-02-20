@@ -14,7 +14,10 @@
         <img src="https://via.placeholder.com/400x400" />
       </div>
     </section>
-    <CallToAction />
+    <CallToAction link="/contact" buttonText="Contact Us">
+      Find out how Nearpeer can increase
+      <br />your incoming class
+    </CallToAction>
   </div>
 </template>
 
