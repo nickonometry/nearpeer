@@ -22,7 +22,7 @@
       class="navlink deep-purple--text text--darken-3"
     >What is NearPeer?</nuxt-link>
     <nuxt-link to="/about" class="navlink deep-purple--text text--darken-3">About</nuxt-link>
-    <v-btn rounded depressed color="primary">Testing rounded button</v-btn>
+    <v-btn rounded depressed color="primary" class="ml-3">Contact Us</v-btn>
   </v-app-bar>
 </template>
 
