@@ -7,7 +7,7 @@ export default {
    */
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: "en"
     },
     titleTemplate: "%s - " + process.env.npm_package_name,
     title: process.env.npm_package_name || "Nearpeer.com",
@@ -85,6 +85,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend(config, ctx) {}
   }
 };
