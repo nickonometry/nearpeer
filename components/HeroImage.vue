@@ -21,6 +21,11 @@
         <span class="underline">peer</span>
         <span class="underline">engagement</span>
       </h2>
+      <p>Leverage peer networks for more committed, enrolled successful students</p>
+      <div class="hero-container__text-container__link">
+        <img src="https://via.placeholder.com/33x53" />
+        <a href="#">Are you a student? Sign up and download the Nearpeer app here!</a>
+      </div>
     </div>
   </div>
 </template>
@@ -40,6 +45,7 @@ export default {};
     top: 80px;
     left: 80px;
     width: 590px;
+    color: white;
 
     .underline {
       border-bottom: 8px solid #ff4081;
@@ -49,9 +55,28 @@ export default {};
 
     h2 {
       font-size: 88px;
-      color: white;
       line-height: 76px;
       font-weight: bold;
+    }
+
+    p {
+      font-size: 24px;
+      margin: 48px 0;
+      line-height: 28px;
+      font-weight: bold;
+    }
+
+    &__link {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: center;
+
+      a {
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+      }
     }
   }
 }
