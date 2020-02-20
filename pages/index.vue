@@ -14,15 +14,18 @@
         <img src="https://via.placeholder.com/400x400" />
       </div>
     </section>
+    <CallToAction />
   </div>
 </template>
 
 <script>
 import HeroImage from "../components/HeroImage";
+import CallToAction from "../components/CallToAction";
 
 export default {
   components: {
-    HeroImage
+    HeroImage,
+    CallToAction
   }
 };
 </script>
