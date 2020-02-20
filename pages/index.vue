@@ -1,9 +1,6 @@
 <template>
   <div>
-    <v-parallax
-      dark
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-    >
+    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <h1 class="display-1 font-weight-thin mb-4">Vuetify.js</h1>
@@ -14,9 +11,7 @@
 
     <section class="enrollment-rate">
       <div class="enrollment-rate__grid">
-        <p class="callout">
-          Nearpeer users are over 6 times more likely to enroll
-        </p>
+        <p class="callout">Nearpeer users are over 6 times more likely to enroll</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           adipisci facilis exercitationem praesentium sequi tempora, laboriosam
