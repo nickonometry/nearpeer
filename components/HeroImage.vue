@@ -14,6 +14,10 @@
         </v-row>
       </template>
     </v-img>
+
+    <div class="hero-container__text-container">
+      <h2>Harness the power of peer engagement</h2>
+    </div>
   </div>
 </template>
 
@@ -25,6 +29,21 @@ export default {};
 .hero-container {
   height: 100%;
   max-height: 600px;
+  position: relative;
+
+  &__text-container {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 590px;
+
+    h2 {
+      font-size: 88px;
+      color: white;
+      line-height: 76px;
+      font-weight: bold;
+    }
+  }
 }
 
 .bottom-gradient {
