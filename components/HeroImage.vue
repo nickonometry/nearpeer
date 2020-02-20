@@ -16,7 +16,11 @@
     </v-img>
 
     <div class="hero-container__text-container">
-      <h2>Harness the power of peer engagement</h2>
+      <h2>
+        Harness the power of
+        <span class="underline">peer</span>
+        <span class="underline">engagement</span>
+      </h2>
     </div>
   </div>
 </template>
@@ -36,6 +40,12 @@ export default {};
     top: 80px;
     left: 80px;
     width: 590px;
+
+    .underline {
+      border-bottom: 8px solid #ff4081;
+      display: inline-block;
+      line-height: 0.85;
+    }
 
     h2 {
       font-size: 88px;
