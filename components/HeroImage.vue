@@ -25,12 +25,6 @@ export default {};
 .hero-container {
   height: 100%;
   max-height: 600px;
-
-  img {
-    // mix-blend-mode: screen;
-    // opacity: 0.3;
-    // width: 100%;
-  }
 }
 
 .bottom-gradient {
