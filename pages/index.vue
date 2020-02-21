@@ -15,6 +15,7 @@
         <img src="https://via.placeholder.com/400x400" />
       </div>
     </section>
+    <SocialMediaDiffers />
     <StrategicPartnership />
     <CallToAction link="/contact" buttonText="Contact Us">
       Find out how Nearpeer can increase
@@ -28,13 +29,15 @@ import HeroImage from "../components/HeroImage";
 import CallToAction from "../components/CallToAction";
 import ImageCarousel from "../components/ImageCarousel";
 import StrategicPartnership from "../components/StrategicPartnership";
+import SocialMediaDiffers from "../components/SocialMediaDiffers";
 
 export default {
   components: {
     HeroImage,
     CallToAction,
     ImageCarousel,
-    StrategicPartnership
+    StrategicPartnership,
+    SocialMediaDiffers
   }
 };
 </script>
