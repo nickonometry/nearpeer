@@ -1,6 +1,7 @@
 <template>
   <div>
     <HeroImage />
+    <ImageCarousel />
 
     <section class="enrollment-rate">
       <div class="enrollment-rate__grid">
@@ -24,11 +25,13 @@
 <script>
 import HeroImage from "../components/HeroImage";
 import CallToAction from "../components/CallToAction";
+import ImageCarousel from "../components/ImageCarousel";
 
 export default {
   components: {
     HeroImage,
-    CallToAction
+    CallToAction,
+    ImageCarousel
   }
 };
 </script>
