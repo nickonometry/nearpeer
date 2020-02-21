@@ -15,6 +15,7 @@
         <img src="https://via.placeholder.com/400x400" />
       </div>
     </section>
+    <StrategicPartnership />
     <CallToAction link="/contact" buttonText="Contact Us">
       Find out how Nearpeer can increase
       <br />your incoming class
@@ -26,12 +27,14 @@
 import HeroImage from "../components/HeroImage";
 import CallToAction from "../components/CallToAction";
 import ImageCarousel from "../components/ImageCarousel";
+import StrategicPartnership from "../components/StrategicPartnership";
 
 export default {
   components: {
     HeroImage,
     CallToAction,
-    ImageCarousel
+    ImageCarousel,
+    StrategicPartnership
   }
 };
 </script>
