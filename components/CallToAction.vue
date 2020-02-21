@@ -3,7 +3,7 @@
     <h2>
       <slot></slot>
     </h2>
-    <v-btn :href="link" rounded depressed color="primary" class="ml-3">{{buttonText}}</v-btn>
+    <v-btn :href="link" rounded depressed color="secondary" class="ml-3">{{buttonText}}</v-btn>
   </section>
 </template>
 
