@@ -187,7 +187,11 @@ export default {
 <style lang="scss" scoped>
 .hero {
   &__image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(
+        to right,
+        rgba(70, 17, 169, 0.8),
+        rgba(70, 17, 169, 0.95)
+      ),
       url("/images/contact/building.jpg");
     height: 300px;
     background-position: center;
