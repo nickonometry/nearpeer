@@ -3,6 +3,8 @@
     <section class="inputform">
       <form>
         <v-text-field
+          outlined
+          dense
           v-model="name"
           :error-messages="nameErrors"
           :counter="10"
@@ -12,6 +14,8 @@
           @blur="$v.name.$touch()"
         ></v-text-field>
         <v-text-field
+          outlined
+          dense
           v-model="email"
           :error-messages="emailErrors"
           label="E-mail"
@@ -20,6 +24,8 @@
           @blur="$v.email.$touch()"
         ></v-text-field>
         <v-select
+          outlined
+          dense
           v-model="select"
           :items="items"
           :error-messages="selectErrors"
