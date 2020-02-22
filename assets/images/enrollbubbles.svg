@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 456 445" style="enable-background:new 0 0 456 445;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.904;}
+	.st1{fill:#FF4081;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#4611A9;stroke:#4F00B0;stroke-miterlimit:10;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{fill:#D8D8D8;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+	.st6{clip-path:url(#SVGID_6_);}
+</style>
+<g id="backImageBubble" transform="translate(67.281 6.616)" class="st0">
+	<circle id="Oval_Copy_5-2" class="st1" cx="94.5" cy="113.9" r="81.9"/>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="94.5" cy="113.9" r="81.9"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Group_20-2" class="st2">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1024" height="647" id="Bitmap" xlink:href="B55F42E8.jpg"  transform="matrix(0.3457 0 0 0.3457 -55.5095 -18.7008)">
+			</image>
+		</g>
+	</g>
+</g>
+<circle id="upperRightPinkBubble" class="st1" cx="373.5" cy="94.4" r="62.5"/>
+<circle id="lowerPinkBubble" class="st1" cx="253.7" cy="397.9" r="28"/>
+<circle id="purpleBubble" class="st3" cx="63.1" cy="155.2" r="50"/>
+<g id="lowerImageBubble" transform="translate(34.512 233.225)">
+	<circle id="Oval_Copy_2-2" class="st1" cx="94.5" cy="113.9" r="81.6"/>
+	<g>
+		<defs>
+			<circle id="SVGID_3_" cx="94.5" cy="113.9" r="81.6"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Group_19-2" class="st4">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1024" height="683" id="Bitmap-2" xlink:href="B55F42E9.jpg"  transform="matrix(0.2583 0 0 0.2583 -78.9495 25.6332)">
+			</image>
+		</g>
+	</g>
+</g>
+<g id="frontImageBubble" transform="translate(120.351 59.615)">
+	<circle id="Oval_Copy-2" class="st5" cx="143.2" cy="163.3" r="130.6"/>
+	<g>
+		<defs>
+			<circle id="SVGID_5_" cx="143.2" cy="163.3" r="130.6"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Group_18-2" class="st6">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1024" height="683" id="Bitmap-3" xlink:href="B55F42EF.jpg"  transform="matrix(0.3838 0 0 0.3838 -71.3475 32.236)">
+			</image>
+		</g>
+	</g>
+</g>
+</svg>

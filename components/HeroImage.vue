@@ -2,28 +2,20 @@
 
 <template>
   <div class="hero-container">
-    <v-img
-      src="/images/homepage-hero/hero1.jpg"
-      lazy-src="/images/homepage-hero/hero1.jpg"
-      aspect-ratio="3.2"
-    >
-      <div class="fill-height bottom-gradient"></div>
-      <template v-slot:placeholder>
-        <v-row class="fill-height ma-0" align="center" justify="center">
-          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-        </v-row>
-      </template>
-    </v-img>
-    <div class="hero-container__text-container">
-      <h2>
-        Harness the power of
-        <span class="underline">peer</span>
-        <span class="underline">engagement</span>
-      </h2>
-      <p>Leverage peer networks for more committed, enrolled successful students</p>
-      <div class="hero-container__text-container__link">
-        <img src="https://via.placeholder.com/33x53" />
-        <a href="#">Are you a student? Sign up and download the Nearpeer app here!</a>
+    <div class="overlay"></div>
+
+    <div class="slides">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <h2>
+          Harness the power of
+          <span class="underline">peer</span>
+          <span class="underline">engagement</span>
+        </h2>
+        <p>
+          Leverage peer networks for more committed,
+          enrolled successful students
+        </p>
       </div>
     </div>
   </div>
@@ -35,17 +27,35 @@ export default {};
 
 <style lang="scss" scoped>
 .hero-container {
-  height: 100%;
-  max-height: 600px;
   position: relative;
+  height: 600px;
 
-  &__text-container {
+  .slides {
+    .slide-1 {
+      height: 600px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(/images/homepage-hero/hero1.jpg);
+    }
+  }
+
+  .hero {
     position: absolute;
     top: 10%;
-    left: 10%;
-    transform: translate(-10%, -10%);
-    overflow: hidden;
-    color: white;
+    left: 5%;
+    z-index: 3;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+    max-width: 550px;
+
+    h2 {
+      font-size: 4em;
+      font-weight: bold;
+      margin-bottom: 48px;
+      padding: 0;
+      line-height: 74px;
+    }
 
     .underline {
       border-bottom: 8px solid #ff4081;
@@ -53,42 +63,72 @@ export default {};
       line-height: 0.85;
     }
 
-    h2 {
-      font-size: 88px;
-      line-height: 76px;
-      font-weight: bold;
-      max-width: 590px;
-    }
-
     p {
+      line-height: 24px;
       font-size: 24px;
-      margin: 48px 0;
-      line-height: 28px;
-      font-weight: bold;
-      max-width: 590px;
-    }
-
-    &__link {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 12px;
-      align-items: center;
-      max-width: 590px;
-
-      a {
-        font-size: 16px;
-        color: white;
-        font-weight: bold;
-      }
+      margin-bottom: 48px;
+      max-width: 500px;
     }
   }
 }
 
-.bottom-gradient {
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
   background-image: linear-gradient(
     to right,
-    rgba(70, 17, 169, 0.75) 100%,
-    transparent 72px
+    rgba(70, 17, 169, 0.8),
+    rgba(70, 17, 169, 0.95)
   );
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px) {
+  .hero {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero-container {
+    position: relative;
+    height: 100vh;
+
+    .slides {
+      .slide-1 {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(/images/homepage-hero/hero1.jpg);
+      }
+    }
+
+    .hero {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      padding: 3%;
+
+      h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 56px;
+        padding: 0;
+        line-height: 48px;
+      }
+    }
+  }
 }
 </style>

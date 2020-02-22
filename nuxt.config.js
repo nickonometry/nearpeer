@@ -134,8 +134,8 @@ export default {
           success: colors.green.accent3
         },
         light: {
-          primary: "#FF4081",
-          secondary: "",
+          primary: "#4611A9",
+          secondary: "#FF4081",
           accent: "",
           info: colors.teal.lighten1,
           warning: colors.amber.base,

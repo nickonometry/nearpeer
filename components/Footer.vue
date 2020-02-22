@@ -37,7 +37,7 @@ export default {};
   align-items: flex-start;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #292929;
+  background-color: #292929 !important;
 
   .leftside {
     display: flex;
