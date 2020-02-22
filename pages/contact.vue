@@ -1,51 +1,105 @@
 <template>
   <div>
+    <div class="hero__image">
+      <div class="hero__text">
+        <h1 style="font-size:50px">Contact</h1>
+      </div>
+    </div>
     <section class="inputform">
-      <form>
-        <v-text-field
-          outlined
-          dense
-          v-model="name"
-          :error-messages="nameErrors"
-          :counter="10"
-          label="Name"
-          required
-          @input="$v.name.$touch()"
-          @blur="$v.name.$touch()"
-        ></v-text-field>
-        <v-text-field
-          outlined
-          dense
-          v-model="email"
-          :error-messages="emailErrors"
-          label="E-mail"
-          required
-          @input="$v.email.$touch()"
-          @blur="$v.email.$touch()"
-        ></v-text-field>
-        <v-select
-          outlined
-          dense
-          v-model="select"
-          :items="items"
-          :error-messages="selectErrors"
-          label="Item"
-          required
-          @change="$v.select.$touch()"
-          @blur="$v.select.$touch()"
-        ></v-select>
-        <v-checkbox
-          v-model="checkbox"
-          :error-messages="checkboxErrors"
-          label="Do you agree?"
-          required
-          @change="$v.checkbox.$touch()"
-          @blur="$v.checkbox.$touch()"
-        ></v-checkbox>
+      <v-card class="contact-card" min-width="960">
+        <div class="card__content">
+          <h2>We're here to help you</h2>
+          <form>
+            <div class="two__column">
+              <v-text-field
+                class="two__column--full"
+                outlined
+                dense
+                v-model="hereToHelp"
+                :error-messages="hereToHelpErrors"
+                label="What may we help you with?"
+                required
+                @input="$v.hereToHelp.$touch()"
+                @blur="$v.hereToHelp.$touch()"
+              ></v-text-field>
+              <v-text-field
+                outlined
+                dense
+                v-model="name"
+                :error-messages="nameErrors"
+                label="Name"
+                required
+                @input="$v.name.$touch()"
+                @blur="$v.name.$touch()"
+              ></v-text-field>
+              <v-text-field
+                outlined
+                dense
+                v-model="lastName"
+                :error-messages="nameErrors"
+                label="Last Name"
+                required
+                @input="$v.lastName.$touch()"
+                @blur="$v.lastName.$touch()"
+              ></v-text-field>
+              <v-text-field
+                outlined
+                dense
+                v-model="Title"
+                :error-messages="titleErrors"
+                label="E-mail"
+                required
+                @input="$v.title.$touch()"
+                @blur="$v.title.$touch()"
+              ></v-text-field>
+              <v-text-field
+                outlined
+                dense
+                v-model="institution"
+                :error-messages="institutionErrors"
+                label="Institution / Organization"
+                required
+                @input="$v.institution.$touch()"
+                @blur="$v.institution.$touch()"
+              ></v-text-field>
+              <v-text-field
+                outlined
+                dense
+                v-model="email"
+                :error-messages="emailErrors"
+                label="Email"
+                required
+                @input="$v.email.$touch()"
+                @blur="$v.email.$touch()"
+              ></v-text-field>
+              <v-text-field
+                outlined
+                dense
+                v-model="phone"
+                :error-messages="phoneErrors"
+                label="Phone (Optional)"
+                required
+                @input="$v.phone.$touch()"
+                @blur="$v.phone.$touch()"
+              ></v-text-field>
+              <v-textarea
+                class="two__column--full"
+                outlined
+                name="input-7-4"
+                label="Outlined textarea"
+                value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
+              ></v-textarea>
+            </div>
 
-        <v-btn class="mr-4" @click="submit">submit</v-btn>
-        <v-btn @click="clear">clear</v-btn>
-      </form>
+            <div class="toolbar-bottom">
+              <div class="toolbar-bottom__start">* Required fields</div>
+              <div class="toolbar-bottom__end">
+                <v-btn rounded color="secondary" @click="submit" dark>Submit</v-btn>
+              </div>
+            </div>
+          </form>
+        </div>
+      </v-card>
     </section>
     <CallToAction
       link="/student-success"
@@ -120,6 +174,7 @@ export default {
     },
     clear() {
       this.$v.$reset();
+      this.hereToHelp = "";
       this.name = "";
       this.email = "";
       this.select = null;
@@ -130,9 +185,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.hero {
+  &__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+      url("/images/contact/building.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  &__text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+  }
+}
+
 .inputform {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 960px;
+  margin: -200px auto;
   padding: 80px 20px;
+}
+
+.card__content {
+  padding: 24px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+
+.two__column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  &--full {
+    grid-column: 1/3;
+  }
+}
+
+.toolbar-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
