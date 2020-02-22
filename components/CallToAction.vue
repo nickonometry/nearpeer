@@ -1,9 +1,11 @@
 <template>
   <section class="deep-purple darken-3">
-    <h2>
-      <slot></slot>
-    </h2>
-    <v-btn :href="link" rounded depressed color="secondary" class="ml-3">{{buttonText}}</v-btn>
+    <div class="sectioncontainer">
+      <h2>
+        <slot></slot>
+      </h2>
+      <v-btn :href="link" rounded depressed color="secondary" class="ml-3">{{buttonText}}</v-btn>
+    </div>
   </section>
 </template>
 
@@ -17,10 +19,16 @@ export default {
 section {
   height: 400px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  .sectioncontainer {
+    display: flex;
+    max-width: 580px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
   h2 {
     font-size: 30px;
     font-weight: bold;

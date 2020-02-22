@@ -6,10 +6,10 @@
     <EnrollmentStats />
     <SocialMediaDiffers />
     <StrategicPartnership />
-    <CallToAction link="/contact" buttonText="Contact Us">
-      Find out how Nearpeer can increase
-      <br />your incoming class
-    </CallToAction>
+    <CallToAction
+      link="/contact"
+      buttonText="Contact Us"
+    >Find out how Nearpeer can increase your incoming class</CallToAction>
   </div>
 </template>
 
