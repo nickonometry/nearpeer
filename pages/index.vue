@@ -1,37 +1,35 @@
 <template>
   <div>
-    <HeroImage />
-    <ImageCarousel />
-
-    <EnrollmentStats />
-    <SocialMediaDiffers />
-    <StrategicPartnership />
-    <CallToAction
-      link="/contact"
-      buttonText="Contact Us"
-    >Find out how Nearpeer can increase your incoming class</CallToAction>
+    <div class="coming-soon">
+      <img src="/images/nearpeer_logo.svg" alt="Nearpeer Logo - New website coming soon!" />
+      <h1>New website coming soon</h1>
+    </div>
   </div>
 </template>
 
 <script>
-import HeroImage from "../components/HeroImage";
-import CallToAction from "../components/CallToAction";
-import ImageCarousel from "../components/ImageCarousel";
-import StrategicPartnership from "../components/StrategicPartnership";
-import SocialMediaDiffers from "../components/SocialMediaDiffers";
-import EnrollmentStats from "../components/EnrollmentStats";
-
 export default {
-  components: {
-    HeroImage,
-    CallToAction,
-    ImageCarousel,
-    StrategicPartnership,
-    SocialMediaDiffers,
-    EnrollmentStats
-  }
+  layout: "comingsoon"
 };
 </script>
 
 <style lang="scss" scoped>
+.coming-soon {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    max-width: 400px;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    color: #4611a9;
+    font-weight: bold;
+  }
+}
 </style>
