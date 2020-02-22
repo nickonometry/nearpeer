@@ -14,7 +14,6 @@
         </v-row>
       </template>
     </v-img>
-
     <div class="hero-container__text-container">
       <h2>
         Harness the power of
@@ -42,9 +41,10 @@ export default {};
 
   &__text-container {
     position: absolute;
-    top: 80px;
-    left: 80px;
-    width: 590px;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    overflow: hidden;
     color: white;
 
     .underline {
@@ -57,6 +57,7 @@ export default {};
       font-size: 88px;
       line-height: 76px;
       font-weight: bold;
+      max-width: 590px;
     }
 
     p {
@@ -64,6 +65,7 @@ export default {};
       margin: 48px 0;
       line-height: 28px;
       font-weight: bold;
+      max-width: 590px;
     }
 
     &__link {
@@ -71,6 +73,7 @@ export default {};
       grid-template-columns: auto 1fr;
       gap: 12px;
       align-items: center;
+      max-width: 590px;
 
       a {
         font-size: 16px;
