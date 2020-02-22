@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section class="inputform">
       <form>
         <v-text-field
           v-model="name"
@@ -124,4 +124,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.inputform {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
 </style>
