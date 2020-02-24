@@ -3,7 +3,7 @@
 <template>
   <section>
     <div class="carousel-container">
-      <v-btn class="mx-4" fab color="primary" @click="prev">
+      <v-btn class="mx-4" fab color="primary" @click="prev" aria-label="View the previous slide">
         <v-icon dark>mdi-chevron-left</v-icon>
       </v-btn>
       <v-card flat tile width="100%">
@@ -98,7 +98,7 @@
           </v-window-item>
         </v-window>
       </v-card>
-      <v-btn class="mx-4" fab color="primary" @click="next">
+      <v-btn class="mx-4" fab color="primary" @click="next" aria-label="View the next slide">
         <v-icon dark>mdi-chevron-right</v-icon>
       </v-btn>
     </div>
