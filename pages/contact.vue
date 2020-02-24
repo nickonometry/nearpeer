@@ -137,6 +137,14 @@ export default {
   },
 
   data: () => ({
+    firstName: "",
+    lastName: "",
+    title: "",
+    organization: "",
+    phone: "",
+    email: "",
+    helpWith: "",
+    comments: "",
     name: "",
     email: "",
     select: null,
@@ -185,6 +193,33 @@ export default {
       this.email = "";
       this.select = null;
       this.checkbox = false;
+    },
+    sendgridFire() {
+      let vm = this;
+      var data = JSON.stringify({
+        firstName: vm.firstName,
+        lastName: vm.lastName,
+        title: vm.title,
+        organization: vm.organization,
+        phone: vm.phone,
+        email: vm.email,
+        helpWith: vm.helpWith,
+        comments: vm.comments
+      });
+
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
+
+      xhr.addEventListener("readystatechange", function() {
+        if (this.readyState === 4) {
+          console.log(this.responseText);
+        }
+      });
+
+      xhr.open("POST", "/.netlify/functions/sendgridFire");
+      xhr.setRequestHeader("Content-Type", "application/json");
+
+      xhr.send(data);
     }
   }
 };
