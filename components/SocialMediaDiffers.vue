@@ -60,8 +60,6 @@ export default {};
 
 <style lang="scss" scoped>
 section {
-  border-top: 1px solid #ddd;
-
   .heading-container {
     max-width: 950px;
     margin: 48px auto;

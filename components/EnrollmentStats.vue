@@ -157,4 +157,35 @@ section {
     fill: #d8d8d8;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .enrollment-rate {
+    padding: 24px;
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      justify-items: center;
+      align-items: center;
+
+      h2 {
+        text-align: center;
+        max-width: 100%;
+        span {
+          color: #ff1a80;
+        }
+      }
+
+      p {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
 </style>

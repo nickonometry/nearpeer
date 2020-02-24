@@ -114,7 +114,6 @@
         <v-icon dark>mdi-chevron-right</v-icon>
       </v-btn>
     </div>
-    <v-divider></v-divider>
   </section>
 </template>
 
