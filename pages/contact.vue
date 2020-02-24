@@ -100,10 +100,11 @@
       </v-card>
     </section>
     <section class="inputform" v-else>
-      <v-card class="contact-card" min-width="960">
+      <v-card class="contact-card text-center" min-width="960">
         <div class="card__content">
-          <h2>Huge Success!</h2>
-          <p>We got your message. We will get back to you as soon as we can! Thank you for your interest in Nearpeer.</p>
+          <h2>{{outcome.title}}</h2>
+          <p>{{outcome.detail}}</p>
+          <v-btn rounded color="secondary" @click="clear" dark aria-label="Reset Form">OK!</v-btn>
         </div>
       </v-card>
     </section>
@@ -136,7 +137,11 @@ export default {
     email: "",
     helpWith: "",
     comments: "",
-    submitStatus: "unsubmitted"
+    submitStatus: "unsubmitted",
+    outcome: {
+      title: "Uh oh, something went wrong",
+      detail: "Unfortunately, something went.  Please try again."
+    }
   }),
 
   computed: {
@@ -191,9 +196,7 @@ export default {
       vm.$v.$touch();
       if (vm.$v.$invalid) {
         vm.submitStatus = "ERROR";
-        console.log("ruh roh");
       } else {
-        console.log("submit working");
         vm.sendgridFire();
       }
     },
@@ -207,6 +210,7 @@ export default {
       this.email = "";
       this.phone = "";
       this.comments = "";
+      this.formvis = true;
     },
     sendgridFire() {
       let vm = this;
@@ -226,7 +230,18 @@ export default {
 
       xhr.addEventListener("readystatechange", function() {
         if (this.readyState === 4) {
-          console.log(this.responseText);
+          console.log(this.status);
+          if (this.status == 200) {
+            vm.outcome.title = "Message Sent";
+            vm.outcome.detail =
+              "Thank you for submitting your message! We will reach out to you as soon as we can.  Thank you for your interest in Nearpeer.";
+            vm.formvis = false;
+          } else {
+            vm.outcome.title = "Uh oh, we encountered an error...";
+            vm.outcome.detail =
+              "Unfortunately, something went wrong.  Please try again.";
+            vm.formvis = false;
+          }
         }
       });
 
@@ -279,7 +294,6 @@ export default {
   }
   p {
     text-align: center;
-    padding-bottom: 60px;
   }
 }
 
