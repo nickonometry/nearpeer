@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="nav-container--mobile">
+    <div class="nav-container--mobile" v-if="!showNav">
       <v-btn icon v-on:click="$emit('toggle-menu')">
         <v-icon>mdi-menu</v-icon>
       </v-btn>
