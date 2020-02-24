@@ -78,5 +78,8 @@ export default {
 .v-list--nav {
   padding-left: 0px;
   padding-right: 0px;
+  .v-list-item {
+    padding: 0 16px;
+  }
 }
 </style>
