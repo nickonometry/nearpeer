@@ -8,7 +8,7 @@
       </v-btn>
       <v-card flat tile width="100%">
         <v-window v-model="onboarding" reverse>
-          <v-window-item>
+          <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/lsu.png" />
               <div class="right">
@@ -23,7 +23,7 @@
               </div>
             </div>
           </v-window-item>
-          <v-window-item>
+          <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/suu.png" />
               <div class="right">
@@ -40,7 +40,7 @@
               </div>
             </div>
           </v-window-item>
-          <v-window-item>
+          <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/umo.png" />
               <div class="right">
@@ -50,7 +50,7 @@
               </div>
             </div>
           </v-window-item>
-          <v-window-item>
+          <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/rnl.png" />
               <div class="right">
@@ -66,7 +66,7 @@
               </div>
             </div>
           </v-window-item>
-          <v-window-item>
+          <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/contact.png" />
               <div class="right">
@@ -84,7 +84,7 @@
               </div>
             </div>
           </v-window-item>
-          <v-window-item>
+          <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/logo.png" />
               <div class="right">
@@ -133,6 +133,10 @@ export default {
   margin: 0 auto;
   display: flex;
   align-items: center;
+
+  .slide-container {
+    height: 310px;
+  }
 
   .carousel-inner {
     display: grid;
