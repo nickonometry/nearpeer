@@ -162,4 +162,16 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .carousel-container {
+    .slide-container {
+      height: 310px;
+    }
+
+    .carousel-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
 </style>
