@@ -1,54 +1,52 @@
 <template>
   <section>
+    <div class="heading-container">
+      <div class="heading">
+        <h2>“Will I fit in?”</h2>
+        <div>
+          <img src="/images/sad-face.png" />
+          <img src="/images/smiley-face.png" />
+        </div>
+      </div>
+      <p>
+        …is students’ #1 priority in their decision to enroll
+        Nearpeer addresses this need and delivers higher enrollment
+      </p>
+    </div>
     <div class="sectioncontainer">
       <div class="left">
-        <h2>
-          How is Nearpeer different
-          <br />than social media?
-        </h2>
         <img src="~assets/images/nearpeer_phone_set.png" width="390px" />
       </div>
       <div class="right">
         <div class="iconcomp">
           <img src="~assets/images/account-switch-outline.svg" width="45px" />
           <div class="comptext">
-            <h3>Higher quality engagement</h3>
+            <h3>Designed for peer discovery</h3>
             <p>
-              Nearpeer engages all students in ad-free environment,
+              Nearpeer engages all students in an ad-free environment,
               including the introverts.
             </p>
-            <p>
-              Social media leaves out the 75% of incoming students who
-              behave like introverts.
-            </p>
+            <p>In contrast, social media leaves out 75% of incoming students who behave like introverts.</p>
           </div>
         </div>
         <div class="iconcomp">
           <img src="~assets/images/check-underline-circle-outline.svg" width="45px" />
           <div class="comptext">
-            <h3>Easy To Roll Out</h3>
-            <p>
-              We know your team is busy, so we do most of the work for you.
-              Simple and effortless. Students create the content. Nearpeer
-              moderates it to ensure a safe, high-quality experience.
-            </p>
-
-            <p>
-              With social media, your team is responsible for the work
-              of creating content.
-            </p>
+            <h3>
+              Advanced algorithms foster
+              human connection
+            </h3>
+            <p>Nearpeer’s multi-dimensional matching algorithms promote 1:1 peer relationships based on what students have in common: shared interests, academics, life experience, and more.</p>
           </div>
         </div>
         <div class="iconcomp">
           <img src="~assets/images/finance.svg" width="45px" />
           <div class="comptext">
-            <h3>Real, Measurable Results</h3>
+            <h3>Guaranteed results</h3>
             <p>
-              Nearpeer delivers higher enrollment, persistence,
-              and return on investment.
+              Nearpeer is focused on delivering you measurable enrollment lift, and we’ll guarantee it. As your partner, your goals are our goals.
+              Source: Eduventures 2020.
             </p>
-
-            <p>Social media impact is often impossible to measure.</p>
           </div>
         </div>
       </div>
@@ -63,6 +61,33 @@ export default {};
 <style lang="scss" scoped>
 section {
   border-top: 1px solid #ddd;
+
+  .heading-container {
+    width: 950px;
+    margin: 48px auto;
+
+    .heading {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #4611a9;
+      padding-bottom: 50px;
+      line-height: 30px;
+      margin: 0 24px 0 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
   .sectioncontainer {
     padding: 50px 0;
     background-color: #fff;
@@ -77,13 +102,6 @@ section {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      h2 {
-        font-size: 30px;
-        font-weight: bold;
-        color: #000;
-        padding-bottom: 50px;
-        line-height: 30px;
-      }
     }
     .right {
       display: flex;
