@@ -99,22 +99,14 @@
         </div>
       </v-card>
     </section>
-    <CallToAction
-      link="/student-success"
-      buttonText="Student Success"
-    >Check out some Student Success stories with Nearpeer.</CallToAction>
   </div>
 </template>
 
 <script>
-import CallToAction from "../components/CallToAction";
 import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
 
 export default {
-  components: {
-    CallToAction
-  },
   mixins: [validationMixin],
 
   validations: {
