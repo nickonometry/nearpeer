@@ -7,18 +7,18 @@
         alt="NearPeer Logo"
       />
       <ul class="footer-links">
-        <nuxt-link to="/higher-enrollment">
-          <li>Higher Enrollment</li>
-        </nuxt-link>
-        <nuxt-link to="/student-success">
-          <li>Student Success</li>
-        </nuxt-link>
-        <nuxt-link to="/what-is-near-peer">
-          <li>What is Nearpeer?</li>
-        </nuxt-link>
-        <nuxt-link to="/about">
-          <li>About</li>
-        </nuxt-link>
+        <li>
+          <nuxt-link to="/higher-enrollment">Higher Enrollment</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/student-success">Student Success</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/what-is-near-peer">What is Nearpeer?</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/about">About</nuxt-link>
+        </li>
       </ul>
     </div>
     <div class="footer-bottom grey darken-4">
