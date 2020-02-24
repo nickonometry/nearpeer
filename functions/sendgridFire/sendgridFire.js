@@ -7,11 +7,11 @@ exports.handler = async (event, context, callback) => {
   const body = JSON.parse(event.body);
 
   const msg = {
-    to: "quinlanadam@gmail.com",
+    to: "quinlanadam@gmail.com; nickonometry@gmail.com",
     from: "no-reply@nearpeer.com",
     subject: "Contact Form Submission",
     text: `What May We Help You With: ${body.helpWith}
-    
+
 First Name: ${body.firstName}
 Last Name: ${body.lastName}
 Title: ${body.title}
