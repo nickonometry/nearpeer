@@ -65,3 +65,17 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.v-list-item--link:before {
+  display: none;
+}
+.v-list-item--active {
+  background-color: #ff4081;
+  color: #fff;
+  border-radius: 0;
+}
+.v-list--nav {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+</style>
