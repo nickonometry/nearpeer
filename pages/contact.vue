@@ -15,79 +15,71 @@
                 class="two__column--full"
                 outlined
                 dense
-                v-model="hereToHelp"
-                :error-messages="hereToHelpErrors"
+                v-model="helpWith"
                 label="What may we help you with?"
                 required
-                @input="$v.hereToHelp.$touch()"
-                @blur="$v.hereToHelp.$touch()"
+                :error-messages="helpWithErrors"
+                @input="$v.helpWith.$touch()"
+                @blur="$v.helpWith.$touch()"
               ></v-text-field>
               <v-text-field
                 outlined
                 dense
-                v-model="name"
-                :error-messages="nameErrors"
-                label="Name"
+                v-model="firstName"
+                label="First Name"
                 required
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()"
+                :error-messages="firstNameErrors"
+                @input="$v.firstName.$touch()"
+                @blur="$v.firstName.$touch()"
               ></v-text-field>
               <v-text-field
                 outlined
                 dense
                 v-model="lastName"
-                :error-messages="nameErrors"
                 label="Last Name"
                 required
+                :error-messages="lastNameErrors"
                 @input="$v.lastName.$touch()"
                 @blur="$v.lastName.$touch()"
               ></v-text-field>
               <v-text-field
                 outlined
                 dense
-                v-model="Title"
-                :error-messages="titleErrors"
-                label="E-mail"
+                v-model="title"
+                label="Title"
                 required
+                :error-messages="titleErrors"
                 @input="$v.title.$touch()"
                 @blur="$v.title.$touch()"
               ></v-text-field>
               <v-text-field
                 outlined
                 dense
-                v-model="institution"
-                :error-messages="institutionErrors"
+                v-model="organization"
                 label="Institution / Organization"
                 required
-                @input="$v.institution.$touch()"
-                @blur="$v.institution.$touch()"
+                :error-messages="organizationErrors"
+                @input="$v.organization.$touch()"
+                @blur="$v.organization.$touch()"
               ></v-text-field>
               <v-text-field
                 outlined
                 dense
                 v-model="email"
-                :error-messages="emailErrors"
                 label="Email"
                 required
+                :error-messages="emailErrors"
                 @input="$v.email.$touch()"
                 @blur="$v.email.$touch()"
               ></v-text-field>
-              <v-text-field
-                outlined
-                dense
-                v-model="phone"
-                :error-messages="phoneErrors"
-                label="Phone (Optional)"
-                required
-                @input="$v.phone.$touch()"
-                @blur="$v.phone.$touch()"
-              ></v-text-field>
+              <v-text-field outlined dense v-model="phone" label="Phone (Optional)" required></v-text-field>
               <v-textarea
                 class="two__column--full"
+                v-model="comments"
                 outlined
                 name="input-7-4"
-                label="Outlined textarea"
-                value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
+                label="Questions/Comments"
+                value
               ></v-textarea>
             </div>
 
@@ -126,14 +118,12 @@ export default {
   mixins: [validationMixin],
 
   validations: {
-    name: { required, maxLength: maxLength(10) },
-    email: { required, email },
-    select: { required },
-    checkbox: {
-      checked(val) {
-        return val;
-      }
-    }
+    firstName: { required, maxLength: maxLength(20) },
+    lastName: { required, maxLength: maxLength(20) },
+    helpWith: { required },
+    title: { required },
+    organization: { required },
+    email: { required, email }
   },
 
   data: () => ({
@@ -145,32 +135,44 @@ export default {
     email: "",
     helpWith: "",
     comments: "",
-    name: "",
-    email: "",
-    select: null,
-    items: ["Item 1", "Item 2", "Item 3", "Item 4"],
-    checkbox: false
+    submitStatus: "unsubmitted"
   }),
 
   computed: {
-    checkboxErrors() {
+    firstNameErrors() {
       const errors = [];
-      if (!this.$v.checkbox.$dirty) return errors;
-      !this.$v.checkbox.checked && errors.push("You must agree to continue!");
+      if (!this.$v.firstName.$dirty) return errors;
+      !this.$v.firstName.maxLength &&
+        errors.push("First name must be at most 20 characters long");
+      !this.$v.firstName.required && errors.push("First name is required.");
       return errors;
     },
-    selectErrors() {
+    lastNameErrors() {
       const errors = [];
-      if (!this.$v.select.$dirty) return errors;
-      !this.$v.select.required && errors.push("Item is required");
+      if (!this.$v.lastName.$dirty) return errors;
+      !this.$v.lastName.maxLength &&
+        errors.push("Last name must be at most 20 characters long");
+      !this.$v.lastName.required && errors.push("Last name is required.");
       return errors;
     },
-    nameErrors() {
+    helpWithErrors() {
       const errors = [];
-      if (!this.$v.name.$dirty) return errors;
-      !this.$v.name.maxLength &&
-        errors.push("Name must be at most 10 characters long");
-      !this.$v.name.required && errors.push("Name is required.");
+      if (!this.$v.helpWith.$dirty) return errors;
+      !this.$v.helpWith.required &&
+        errors.push("Please let us know what we can help with.");
+      return errors;
+    },
+    titleErrors() {
+      const errors = [];
+      if (!this.$v.title.$dirty) return errors;
+      !this.$v.title.required && errors.push("Title is required.");
+      return errors;
+    },
+    organizationErrors() {
+      const errors = [];
+      if (!this.$v.organization.$dirty) return errors;
+      !this.$v.organization.required &&
+        errors.push("Organization is required.");
       return errors;
     },
     emailErrors() {
@@ -184,15 +186,26 @@ export default {
 
   methods: {
     submit() {
-      this.$v.$touch();
+      let vm = this;
+      vm.$v.$touch();
+      if (vm.$v.$invalid) {
+        vm.submitStatus = "ERROR";
+        console.log("ruh roh");
+      } else {
+        console.log("submit working");
+        vm.sendgridFire();
+      }
     },
     clear() {
       this.$v.$reset();
-      this.hereToHelp = "";
-      this.name = "";
+      this.helpWith = "";
+      this.firstName = "";
+      this.lastName = "";
+      this.title = "";
+      this.organization = "";
       this.email = "";
-      this.select = null;
-      this.checkbox = false;
+      this.phone = "";
+      this.comments = "";
     },
     sendgridFire() {
       let vm = this;
