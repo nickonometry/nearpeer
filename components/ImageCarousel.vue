@@ -10,7 +10,7 @@
         <v-window v-model="onboarding" reverse>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/lsu.jpg" />
+              <img src="/images/homepage-slider/lsu.jpg" alt="Lousiana State University" />
               <div class="right">
                 <p>Higher enrollment through peer engagement, powered by Nearpeer</p>
                 <span>Including</span>
@@ -25,7 +25,7 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/suu.jpg" />
+              <img src="/images/homepage-slider/suu.jpg" alt="Southern Utah University Logo" />
               <div class="right">
                 <p>“Nearpeer reduced our melt with out-of-state students, and other high-melt populations.</p>
 
@@ -42,7 +42,7 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/umo.jpg" />
+              <img src="/images/homepage-slider/umo.jpg" alt="University of Maine Logo" />
               <div class="right">
                 <p>Higher enrollment & outcomes with Nearpeer</p>
                 <p>↑ yield ↓melt ↑ persistence</p>
@@ -52,7 +52,7 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/rnl.jpg" />
+              <img src="/images/homepage-slider/rnl.jpg" alt="Ruffalo Noel Levitz logo" />
               <div class="right">
                 <p>
                   Ruffalo Noel Levitz & Nearpeer
@@ -68,7 +68,7 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/time.jpg" />
+              <img src="/images/homepage-slider/time.jpg" alt="Contact us today" />
               <div class="right">
                 <p>
                   There’s still time to increase
@@ -86,7 +86,7 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/protection.jpg" />
+              <img src="/images/homepage-slider/protection.jpg" alt="Nearpeer logo" />
               <div class="right">
                 <p>Protect your incoming class today</p>
 
