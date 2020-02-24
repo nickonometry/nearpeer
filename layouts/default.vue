@@ -4,10 +4,8 @@
     <v-app-bar app>
       <Header />
     </v-app-bar>
-    <v-content>
-      <v-container fluid>
-        <nuxt />
-      </v-container>
+    <v-content style="width: 100vw;">
+      <nuxt />
     </v-content>
     <Footer />
   </v-app>

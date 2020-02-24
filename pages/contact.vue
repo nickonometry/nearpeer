@@ -6,7 +6,7 @@
       </div>
     </div>
     <section class="inputform" v-if="formvis">
-      <v-card class="contact-card" min-width="960">
+      <v-card class="contact-card">
         <div class="card__content">
           <h2>We're here to help you</h2>
           <form>
@@ -100,7 +100,7 @@
       </v-card>
     </section>
     <section class="inputform" v-else>
-      <v-card class="contact-card text-center" min-width="960">
+      <v-card class="contact-card text-center">
         <div class="card__content">
           <h2>{{outcome.title}}</h2>
           <p>{{outcome.detail}}</p>
@@ -313,9 +313,26 @@ export default {
 }
 
 @media only screen and (max-width: 1000px) {
+  .hero {
+    width: 100%;
+    &__image {
+      background-image: linear-gradient(
+          to right,
+          rgba(70, 17, 169, 0.8),
+          rgba(70, 17, 169, 0.95)
+        ),
+        url("/images/contact/building.jpg");
+      height: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  }
+
   .inputform {
     width: 100%;
-    margin: -200px 0;
+    margin: 0 auto;
     padding: 0;
   }
 
