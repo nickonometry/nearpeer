@@ -2,8 +2,6 @@
 
 <template>
   <div class="hero-container">
-    <div class="overlay"></div>
-
     <div class="slides">
       <div class="slide-1"></div>
       <div class="hero">
@@ -42,7 +40,7 @@ export default {};
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      background-image: url(/images/homepage-hero/hero.png);
+      background-image: url(/images/homepage-hero/hero.jpg);
     }
   }
 
@@ -98,18 +96,6 @@ export default {};
       margin: 0 0 0 16px;
     }
   }
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-image: linear-gradient(
-    to right,
-    rgba(70, 17, 169, 0.95),
-    rgba(70, 17, 169, 0.65)
-  );
 }
 
 /********************************/
