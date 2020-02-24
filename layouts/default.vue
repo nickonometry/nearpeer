@@ -4,7 +4,7 @@
       <v-list nav class="py-0">
         <v-divider></v-divider>
 
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item v-for="item in items" :key="item.title" link nuxt :to="item.url">
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
@@ -37,11 +37,11 @@ export default {
       isMobile: false,
       drawer: false,
       items: [
-        { title: "Home" },
-        { title: "Higher Enrollment" },
-        { title: "Student Success" },
-        { title: "What is Nearpeer?" },
-        { title: "About" }
+        { title: "Home", url: "/" },
+        { title: "Higher Enrollment", url: "/higher-enrollment" },
+        { title: "Student Success", url: "/student-success" },
+        { title: "What is Nearpeer?", url: "/what-is-near-peer" },
+        { title: "About", url: "/about" }
       ]
     };
   },
