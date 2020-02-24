@@ -63,7 +63,7 @@ section {
   border-top: 1px solid #ddd;
 
   .heading-container {
-    width: 950px;
+    max-width: 950px;
     margin: 48px auto;
 
     .heading {
@@ -93,6 +93,7 @@ section {
     background-color: #fff;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
     max-width: 950px;
@@ -120,6 +121,41 @@ section {
         }
         p {
           font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section {
+    padding: 24px;
+
+    .heading-container {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+
+      .heading {
+        justify-content: center;
+      }
+    }
+
+    .sectioncontainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      .left {
+        margin-bottom: 16px;
+      }
+      .right {
+        width: 100%;
+
+        .iconcomp {
+          width: 75%;
+          margin: 16px auto;
         }
       }
     }

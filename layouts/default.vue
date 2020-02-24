@@ -4,7 +4,7 @@
     <v-app-bar app>
       <Header />
     </v-app-bar>
-    <v-content style="width: 100vw;">
+    <v-content>
       <nuxt />
     </v-content>
     <Footer />

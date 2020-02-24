@@ -3,10 +3,16 @@
 <template>
   <section>
     <div class="carousel-container">
-      <v-btn class="mx-4" fab color="primary" @click="prev" aria-label="View the previous slide">
+      <v-btn
+        class="mx-4 prev-button"
+        fab
+        color="primary"
+        @click="prev"
+        aria-label="View the previous slide"
+      >
         <v-icon dark>mdi-chevron-left</v-icon>
       </v-btn>
-      <v-card flat tile width="100%">
+      <v-card flat width="100%">
         <v-window v-model="onboarding" continuous>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
@@ -98,7 +104,13 @@
           </v-window-item>
         </v-window>
       </v-card>
-      <v-btn class="mx-4" fab color="primary" @click="next" aria-label="View the next slide">
+      <v-btn
+        class="mx-4 next-button"
+        fab
+        color="primary"
+        @click="next"
+        aria-label="View the next slide"
+      >
         <v-icon dark>mdi-chevron-right</v-icon>
       </v-btn>
     </div>
@@ -111,7 +123,7 @@ export default {
   data: () => ({
     length: 6,
     onboarding: 0,
-    autorun: true
+    autorun: false
   }),
 
   methods: {
@@ -175,12 +187,36 @@ export default {
 }
 
 @media only screen and (max-width: 1024px) {
+  .prev-button,
+  .next-button {
+    display: none;
+  }
   .carousel-container {
+    width: 100vw;
+    height: 100%;
+    padding: 24px;
+
     .slide-container {
-      height: 310px;
+      height: 100%;
     }
     .carousel-inner {
       grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-content: center;
+      justify-items: center;
+      gap: 16px;
+
+      img {
+        width: 100%;
+      }
+
+      .right {
+        text-align: center;
+
+        ul li {
+          list-style: none;
+        }
+      }
     }
   }
 }
