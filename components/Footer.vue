@@ -22,7 +22,7 @@
       </ul>
     </div>
     <div class="footer-bottom grey darken-4">
-      <div class="copyrightline">Copyright {{ new Date().getFullYear() }} &copy; Nearpeer</div>
+      <div class="copyrightline">Copyright {{ new Date().getFullYear() }} Nearpeer, Inc.</div>
     </div>
   </v-footer>
 </template>
