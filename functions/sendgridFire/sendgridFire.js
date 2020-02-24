@@ -3,12 +3,31 @@ const sgMail = require("@sendgrid/mail");
 
 exports.handler = async (event, context, callback) => {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+  const body = JSON.parse(event.body);
+
   const msg = {
     to: "quinlanadam@gmail.com",
     from: "no-reply@nearpeer.com",
-    subject: "Sending with Twilio SendGrid is Fun",
-    text: "and easy to do anywhere, even with Node.js",
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>"
+    subject: "Contact Form Submission",
+    text: `What May We Help You With: ${body.helpWith}
+    
+First Name: ${body.firstName}
+Last Name: ${body.lastName}
+Title: ${body.title}
+Institution/Organization: ${body.organization}
+Email: ${body.email}
+Phone: ${body.phone}
+Questions/Comments:${body.comments}`,
+    html: `What May We Help You With: ${body.helpWith}
+    
+First Name: ${body.firstName}
+Last Name: ${body.lastName}
+Title: ${body.title}
+Institution/Organization: ${body.organization}
+Email: ${body.email}
+Phone: ${body.phone}
+Questions/Comments:${body.comments}`
   };
 
   try {
