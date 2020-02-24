@@ -1,8 +1,8 @@
 <template>
   <section class="white">
-    <img src="/images/2019_RNL_Logo.svg" width="120px" />
-    <img src="/images/+.svg" width="20px" style />
-    <img src="/images/nearpeer_logo_tall.svg" width="120px" />
+    <img src="/images/2019_RNL_Logo.svg" width="120px" alt="Ruffalo Noel Levitz logo" />
+    <img src="/images/+.svg" width="20px" style alt />
+    <img src="/images/nearpeer_logo_tall.svg" width="120px" alt="Nearpeer logo" />
     <div class="stratparttext">
       <h2>Strategic Partnership</h2>
       <p>
