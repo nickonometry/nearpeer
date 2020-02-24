@@ -117,7 +117,7 @@ export default {};
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: url(/images/homepage-hero/hero.png);
+        background-image: url(/images/homepage-hero/hero.jpg);
       }
     }
 
