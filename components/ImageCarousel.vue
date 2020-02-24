@@ -145,6 +145,10 @@ export default {
     align-items: center;
     font-size: 18px;
 
+    img {
+      max-width: 450px;
+    }
+
     .right {
       p {
         font-size: 18px;
