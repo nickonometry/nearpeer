@@ -5,7 +5,7 @@
         <h1 style="font-size:50px">Contact</h1>
       </div>
     </div>
-    <section class="inputform">
+    <section class="inputform" v-if="formvis">
       <v-card class="contact-card" min-width="960">
         <div class="card__content">
           <h2>We're here to help you</h2>
@@ -99,6 +99,14 @@
         </div>
       </v-card>
     </section>
+    <section class="inputform" v-else>
+      <v-card class="contact-card" min-width="960">
+        <div class="card__content">
+          <h2>Huge Success!</h2>
+          <p>We got your message. We will get back to you as soon as we can! Thank you for your interest in Nearpeer.</p>
+        </div>
+      </v-card>
+    </section>
   </div>
 </template>
 
@@ -119,6 +127,7 @@ export default {
   },
 
   data: () => ({
+    formvis: true,
     firstName: "",
     lastName: "",
     title: "",
@@ -267,6 +276,10 @@ export default {
   h2 {
     text-align: center;
     margin-bottom: 24px;
+  }
+  p {
+    text-align: center;
+    padding-bottom: 60px;
   }
 }
 
