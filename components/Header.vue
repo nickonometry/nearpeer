@@ -25,7 +25,7 @@
       <nuxt-link to="/about" class="navlink deep-purple--text text--darken-3">About</nuxt-link>
       <div class="navlink--contact">
         <v-btn
-          href="/contact"
+          to="/contact"
           rounded
           depressed
           color="secondary"
