@@ -257,7 +257,7 @@ export default {
 
 .inputform {
   max-width: 960px;
-  margin: -200px auto;
+  margin: -200px auto 0;
   padding: 80px 20px;
 }
 
