@@ -94,7 +94,13 @@
             <div class="toolbar-bottom">
               <div class="toolbar-bottom__start">* Required fields</div>
               <div class="toolbar-bottom__end">
-                <v-btn rounded color="secondary" @click="submit" dark>Submit</v-btn>
+                <v-btn
+                  rounded
+                  color="secondary"
+                  @click="submit"
+                  dark
+                  aria-label="Submit form"
+                >Submit</v-btn>
               </div>
             </div>
           </form>
