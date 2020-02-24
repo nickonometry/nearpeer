@@ -168,7 +168,6 @@ export default {
     .slide-container {
       height: 310px;
     }
-
     .carousel-inner {
       grid-template-columns: 1fr;
     }
