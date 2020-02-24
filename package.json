@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt build && cd functions/send-mailgun && npm install",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate && cd functions/send-mailgun && npm install"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
