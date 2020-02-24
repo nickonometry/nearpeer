@@ -13,9 +13,15 @@
           <span class="underline">engagement</span>
         </h2>
         <p>
-          Leverage peer networks for more committed,
-          enrolled successful students
+          Universities partner with Nearpeer to achieve higher enrollment.
+          Nearpeer is the best way for college students to find and engage
+          peers “like them” - creating community, sense of belonging,
+          and higher commitment to their college.
         </p>
+      </div>
+      <div class="right-side">
+        <img src="/images/homepage-hero/cellphone-android.svg" />
+        <p>Are you a student at a Nearpeer partner university? Get the Nearpeer app here!</p>
       </div>
     </div>
   </div>
@@ -52,7 +58,7 @@ export default {};
     h2 {
       font-size: 4em;
       font-weight: bold;
-      margin-bottom: 48px;
+      margin-bottom: 16px;
       padding: 0;
       line-height: 74px;
     }
@@ -65,9 +71,31 @@ export default {};
 
     p {
       line-height: 24px;
-      font-size: 24px;
+      font-size: 16 px;
+      font-weight: bold;
       margin-bottom: 48px;
       max-width: 500px;
+    }
+  }
+
+  .right-side {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    z-index: 3;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      max-width: 346px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 24px;
+      margin: 0 0 0 16px;
     }
   }
 }
