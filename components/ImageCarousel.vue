@@ -3,6 +3,9 @@
 <template>
   <section>
     <div class="carousel-container">
+      <v-btn class="mx-2" fab small color="primary" @click="prev">
+        <v-icon dark>mdi-chevron-left</v-icon>
+      </v-btn>
       <v-card flat tile width="100%">
         <v-window v-model="onboarding" reverse>
           <v-window-item v-for="n in length" :key="`card-${n}`">
@@ -13,16 +16,10 @@
             </v-card>
           </v-window-item>
         </v-window>
-
-        <v-card-actions class="justify-space-between">
-          <v-btn class="mx-2" fab small color="primary" @click="prev">
-            <v-icon dark>mdi-chevron-left</v-icon>
-          </v-btn>
-          <v-btn class="mx-2" fab small color="primary" @click="next">
-            <v-icon dark>mdi-chevron-right</v-icon>
-          </v-btn>
-        </v-card-actions>
       </v-card>
+      <v-btn class="mx-2" fab small color="primary" @click="next">
+        <v-icon dark>mdi-chevron-right</v-icon>
+      </v-btn>
     </div>
     <v-divider></v-divider>
   </section>
