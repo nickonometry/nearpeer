@@ -69,7 +69,7 @@ export default {};
 
     p {
       line-height: 24px;
-      font-size: 16 px;
+      font-size: 16px;
       font-weight: bold;
       margin-bottom: 48px;
       max-width: 500px;
@@ -117,18 +117,11 @@ export default {};
     }
 
     .hero {
-      margin: auto;
-      position: absolute;
-      top: 0;
+      justify-content: flex-start;
+      max-width: 100%;
       left: 0;
-      bottom: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 16px;
       text-align: center;
-      height: 100vh;
-      padding: 3%;
 
       h2 {
         font-size: 48px;
@@ -136,6 +129,10 @@ export default {};
         margin-bottom: 56px;
         padding: 0;
         line-height: 48px;
+      }
+
+      p {
+        max-width: 100%;
       }
     }
 
