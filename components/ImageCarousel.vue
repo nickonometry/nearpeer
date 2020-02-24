@@ -7,7 +7,7 @@
         <v-icon dark>mdi-chevron-left</v-icon>
       </v-btn>
       <v-card flat tile width="100%">
-        <v-window v-model="onboarding" reverse>
+        <v-window v-model="onboarding" continuous>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
               <img src="/images/homepage-slider/lsu.jpg" alt="Lousiana State University" />
@@ -110,7 +110,8 @@
 export default {
   data: () => ({
     length: 6,
-    onboarding: 0
+    onboarding: 0,
+    autorun: true
   }),
 
   methods: {
@@ -122,6 +123,12 @@ export default {
       this.onboarding =
         this.onboarding - 1 < 0 ? this.length - 1 : this.onboarding - 1;
     }
+  },
+  created() {
+    setInterval(() => {
+      if (!this.autorun) return;
+      if (++this.onboarding >= this.length) this.onboarding = 0;
+    }, 5000);
   }
 };
 </script>
