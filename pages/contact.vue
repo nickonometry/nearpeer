@@ -311,4 +311,22 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 1000px) {
+  .inputform {
+    width: 100%;
+    margin: -200px 0;
+    padding: 0;
+  }
+
+  .two__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    &--full {
+      grid-column: 1;
+    }
+  }
+}
 </style>

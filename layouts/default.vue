@@ -1,9 +1,13 @@
 <template>
   <v-app>
     <DrawerNav />
-    <Header />
+    <v-app-bar app>
+      <Header />
+    </v-app-bar>
     <v-content>
-      <nuxt />
+      <v-container fluid>
+        <nuxt />
+      </v-container>
     </v-content>
     <Footer />
   </v-app>
