@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="right-side">
-        <img src="/images/homepage-hero/cellphone-android.svg" />
+        <img src="/images/homepage-hero/cellphone-android.svg" alt />
         <p>Are you a student at a Nearpeer partner university? Get the Nearpeer app here!</p>
       </div>
     </div>

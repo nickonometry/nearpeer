@@ -4,8 +4,8 @@
       <div class="heading">
         <h2>“Will I fit in?”</h2>
         <div>
-          <img src="/images/sad-face.png" />
-          <img src="/images/smiley-face.png" />
+          <img src="/images/sad-face.png" alt="Sad face emoticon" />
+          <img src="/images/smiley-face.png" alt="Smiley face emoticon" />
         </div>
       </div>
       <p>
@@ -15,11 +15,11 @@
     </div>
     <div class="sectioncontainer">
       <div class="left">
-        <img src="~assets/images/nearpeer_phone_set.png" width="390px" />
+        <img src="~assets/images/nearpeer_phone_set.png" width="390px" alt />
       </div>
       <div class="right">
         <div class="iconcomp">
-          <img src="~assets/images/account-switch-outline.svg" width="45px" />
+          <img src="~assets/images/account-switch-outline.svg" width="45px" alt />
           <div class="comptext">
             <h3>Designed for peer discovery</h3>
             <p>
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="iconcomp">
-          <img src="~assets/images/check-underline-circle-outline.svg" width="45px" />
+          <img src="~assets/images/check-underline-circle-outline.svg" width="45px" alt />
           <div class="comptext">
             <h3>
               Advanced algorithms foster
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="iconcomp">
-          <img src="~assets/images/finance.svg" width="45px" />
+          <img src="~assets/images/finance.svg" width="45px" alt />
           <div class="comptext">
             <h3>Guaranteed results</h3>
             <p>
