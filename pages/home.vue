@@ -3,11 +3,16 @@
     <HeroImage />
     <ImageCarousel />
     <v-divider></v-divider>
+
     <EnrollmentStats />
     <v-divider></v-divider>
+
     <SocialMediaDiffers />
     <v-divider></v-divider>
+
     <StrategicPartnership />
+    <v-divider></v-divider>
+
     <CallToAction
       link="/contact"
       buttonText="Contact Us"

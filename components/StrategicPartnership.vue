@@ -51,4 +51,10 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  section {
+    flex-wrap: wrap;
+  }
+}
 </style>

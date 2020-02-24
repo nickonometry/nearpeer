@@ -136,6 +136,14 @@ section {
 
       .heading {
         justify-content: center;
+        flex-wrap: wrap;
+
+        h2 {
+          margin: 0 0 16px 0;
+          line-height: 64px;
+          text-align: center;
+          font-size: 48px;
+        }
       }
     }
 
