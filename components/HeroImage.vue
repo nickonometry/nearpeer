@@ -101,11 +101,6 @@ export default {};
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media screen and (min-width: 980px) {
-  .hero {
-    width: 980px;
-  }
-}
 @media screen and (max-width: 640px) {
   .hero-container {
     position: relative;
@@ -141,6 +136,18 @@ export default {};
         margin-bottom: 56px;
         padding: 0;
         line-height: 48px;
+      }
+    }
+
+    .right-side {
+      left: 0;
+      right: 0;
+      width: 75%;
+      margin: 0 auto;
+      justify-content: flex-start;
+
+      p {
+        max-width: 100%;
       }
     }
   }
