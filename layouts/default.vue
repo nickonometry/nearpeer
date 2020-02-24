@@ -1,6 +1,17 @@
 <template>
   <v-app v-resize="onResize">
-    <DrawerNav :drawer="drawer" v-if="isMobile" />
+    <v-navigation-drawer v-model="drawer" v-if="isMobile" app right temporary>
+      <v-list nav class="py-0">
+        <v-divider></v-divider>
+
+        <v-list-item v-for="item in items" :key="item.title" link>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-app-bar app>
       <Header :showNav="!isMobile" v-on:toggle-menu="toggleMenu()" />
     </v-app-bar>
@@ -14,19 +25,24 @@
 <script>
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import DrawerNav from "../components/DrawerNav";
 
 export default {
   components: {
     Header,
-    Footer,
-    DrawerNav
+    Footer
   },
 
   data() {
     return {
       isMobile: false,
-      drawer: false
+      drawer: false,
+      items: [
+        { title: "Home" },
+        { title: "Higher Enrollment" },
+        { title: "Student Success" },
+        { title: "What is Nearpeer?" },
+        { title: "About" }
+      ]
     };
   },
 
