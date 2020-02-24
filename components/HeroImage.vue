@@ -42,7 +42,7 @@ export default {};
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      background-image: url(/images/homepage-hero/hero1.jpg);
+      background-image: url(/images/homepage-hero/hero.png);
     }
   }
 
@@ -107,8 +107,8 @@ export default {};
   z-index: 2;
   background-image: linear-gradient(
     to right,
-    rgba(70, 17, 169, 0.8),
-    rgba(70, 17, 169, 0.95)
+    rgba(70, 17, 169, 0.95),
+    rgba(70, 17, 169, 0.65)
   );
 }
 
