@@ -9,7 +9,7 @@
         </div>
       </div>
       <p>
-        …is students’ #1 priority in their decision to enroll.
+        This students’ #1 priority in their decision to enroll.
         <br />Nearpeer addresses this need and delivers higher enrollment.
       </p>
     </div>
