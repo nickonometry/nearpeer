@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="iconcomp">
-          <img src="~assets/images/check-underline-circle-outline.svg" width="45px" alt />
+          <img src="~assets/images/algorithms.svg" width="45px" alt />
           <div class="comptext">
             <h3>
               Advanced algorithms foster
