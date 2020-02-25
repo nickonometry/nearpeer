@@ -38,10 +38,10 @@ export default {
       drawer: false,
       items: [
         { title: "Home", url: "/" },
-        { title: "Higher Enrollment", url: "/higher-enrollment" },
-        { title: "Student Success", url: "/student-success" },
-        { title: "What is Nearpeer?", url: "/what-is-near-peer" },
-        { title: "About", url: "/about" },
+        // { title: "Higher Enrollment", url: "/higher-enrollment" },
+        // { title: "Student Success", url: "/student-success" },
+        // { title: "What is Nearpeer?", url: "/what-is-near-peer" },
+        // { title: "About", url: "/about" },
         { title: "Contact", url: "/contact" }
       ]
     };
