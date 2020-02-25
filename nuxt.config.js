@@ -6,8 +6,7 @@ export default {
     htmlAttrs: {
       lang: "en"
     },
-    titleTemplate: "%s - " + process.env.npm_package_name,
-    title: process.env.npm_package_name || "Nearpeer.com",
+    titleTemplate: "%sNearpeer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -104,7 +103,7 @@ export default {
         innerHTML: `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'UA-158923839-1');`
       }
     ],
@@ -168,6 +167,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };

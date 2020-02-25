@@ -129,6 +129,11 @@ export default {
     organization: { required },
     email: { required, email }
   },
+  head() {
+    return {
+      title: "Contact Us - "
+    };
+  },
 
   data: () => ({
     formvis: true,
