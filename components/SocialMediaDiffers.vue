@@ -4,8 +4,8 @@
       <div class="heading">
         <h2>“Will I fit in?”</h2>
         <div>
-          <img src="/images/sad-face.png" alt="Sad face emoticon" />
-          <img src="/images/smiley-face.png" alt="Smiley face emoticon" />
+          <img src="~assets/images/anxious_face.svg" alt="Sad face emoticon" />
+          <img src="~assets/images/happy_face.svg" alt="Smiley face emoticon" />
         </div>
       </div>
       <p>
