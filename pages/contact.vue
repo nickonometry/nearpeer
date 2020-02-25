@@ -19,7 +19,7 @@
                 outlined
                 dense
                 v-model="helpWith"
-                label="What may we help you with?"
+                label="What may we help you with?*"
                 required
                 :error-messages="helpWithErrors"
                 @input="$v.helpWith.$touch()"
@@ -29,7 +29,7 @@
                 outlined
                 dense
                 v-model="firstName"
-                label="First Name"
+                label="First Name*"
                 required
                 :error-messages="firstNameErrors"
                 @input="$v.firstName.$touch()"
@@ -39,7 +39,7 @@
                 outlined
                 dense
                 v-model="lastName"
-                label="Last Name"
+                label="Last Name*"
                 required
                 :error-messages="lastNameErrors"
                 @input="$v.lastName.$touch()"
@@ -49,7 +49,7 @@
                 outlined
                 dense
                 v-model="title"
-                label="Title"
+                label="Title*"
                 required
                 :error-messages="titleErrors"
                 @input="$v.title.$touch()"
@@ -59,7 +59,7 @@
                 outlined
                 dense
                 v-model="organization"
-                label="Institution / Organization"
+                label="Institution / Organization*"
                 required
                 :error-messages="organizationErrors"
                 @input="$v.organization.$touch()"
@@ -69,13 +69,13 @@
                 outlined
                 dense
                 v-model="email"
-                label="Email"
+                label="Email*"
                 required
                 :error-messages="emailErrors"
                 @input="$v.email.$touch()"
                 @blur="$v.email.$touch()"
               ></v-text-field>
-              <v-text-field outlined dense v-model="phone" label="Phone (Optional)" required></v-text-field>
+              <v-text-field outlined dense v-model="phone" label="Phone" required></v-text-field>
               <v-textarea
                 class="two__column--full"
                 v-model="comments"
