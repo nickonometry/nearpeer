@@ -72,8 +72,10 @@ export default {
 }
 .v-list-item--active {
   background-color: #ff4081;
-  color: #fff;
   border-radius: 0;
+  .v-list-item__title {
+    color: #fff;
+  }
 }
 .v-list--nav {
   padding-left: 0px;
