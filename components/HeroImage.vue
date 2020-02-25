@@ -17,10 +17,12 @@
           and higher commitment to their college.
         </p>
       </div>
-      <div class="right-side">
-        <img src="/images/np_phone.svg" alt />
-        <p>Are you a student at a Nearpeer partner university? Get the Nearpeer app here!</p>
-      </div>
+      <a href="https://www.nearpeer.net">
+        <div class="right-side">
+          <img src="/images/np_phone.svg" alt />
+          <p>Are you a student at a Nearpeer partner university? Get the Nearpeer app here!</p>
+        </div>
+      </a>
     </div>
   </div>
 </template>
