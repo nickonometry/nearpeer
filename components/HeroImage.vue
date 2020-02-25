@@ -38,7 +38,7 @@ export default {};
     .slide-1 {
       height: 500px;
       background-size: cover;
-      background-position: center center;
+      background-position: top center;
       background-repeat: no-repeat;
       background-image: url(/images/homepage-hero/hero.jpg);
     }
