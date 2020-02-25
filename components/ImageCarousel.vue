@@ -43,7 +43,8 @@
                 </p>
                 <p class="quote-author">
                   Brandon Wright AVP,
-                  <br />Enrollment Management Southern Utah University
+                  <br />Enrollment Management
+                  <br />Southern Utah University
                 </p>
               </div>
             </div>
