@@ -8,7 +8,10 @@
     <section class="inputform" v-if="formvis">
       <v-card class="contact-card">
         <div class="card__content">
-          <h2>We're here to help you</h2>
+          <h2>
+            We're here to help
+            <span class="underline">you</span>
+          </h2>
           <form>
             <div class="two__column">
               <v-text-field
@@ -291,6 +294,10 @@ export default {
   h2 {
     text-align: center;
     margin-bottom: 24px;
+
+    .underline {
+      text-decoration: underline;
+    }
   }
   p {
     text-align: center;
