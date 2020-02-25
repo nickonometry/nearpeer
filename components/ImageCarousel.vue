@@ -60,8 +60,8 @@
                   use it.”
                 </p>
                 <p class="quote-author">
-                  Brandon Wright AVP,
-                  <br />Enrollment Management
+                  Brandon Wright
+                  <br />AVP, Enrollment Management
                   <br />Southern Utah University
                 </p>
               </div>
@@ -196,7 +196,9 @@ export default {
       }
 
       .quote-author {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 15px;
+        font-style: italic;
       }
     }
   }
