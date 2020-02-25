@@ -93,7 +93,23 @@ export default {
         rel: "stylesheet",
         href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       }
-    ]
+    ],
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-158923839-1",
+        async: true
+      },
+      {
+        vmid: "gtagscript",
+        innerHTML: `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-158923839-1');`
+      }
+    ],
+    // prettier-ignore
+    __dangerouslyDisableSanitizers: ['script']
   },
   /*
    ** Customize the progress-bar color
