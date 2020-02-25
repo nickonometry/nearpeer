@@ -106,6 +106,7 @@ section {
       flex-direction: column;
       justify-content: space-between;
       width: 430px;
+      padding-right: 2px;
       .iconcomp {
         display: flex;
         align-items: flex-start;
