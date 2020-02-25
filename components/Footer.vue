@@ -1,13 +1,20 @@
 <template>
-  <v-footer absolute :height="315" app class="white--text footer-area" paddless>
-    <div class="leftside">
-      <img
-        src="~assets/images/nearpeer_logo_tall_white.svg"
-        class="footer-logo"
-        alt="NearPeer Logo"
-      />
-      <ul class="footer-links">
-        <!-- <li>
+  <div class="topbor">
+    <v-footer
+      absolute
+      :height="315"
+      app
+      class="white--text deep-purple darken-3 footer-area"
+      paddless
+    >
+      <div class="leftside">
+        <img
+          src="~assets/images/nearpeer_logo_tall_white.svg"
+          class="footer-logo"
+          alt="NearPeer Logo"
+        />
+        <ul class="footer-links">
+          <!-- <li>
           <nuxt-link to="/higher-enrollment">Higher Enrollment</nuxt-link>
         </li>
         <li>
@@ -18,13 +25,14 @@
         </li>
         <li>
           <nuxt-link to="/about">About</nuxt-link>
-        </li>-->
-      </ul>
-    </div>
-    <div class="footer-bottom grey darken-4">
-      <div class="copyrightline">Copyright {{ new Date().getFullYear() }} Nearpeer, Inc.</div>
-    </div>
-  </v-footer>
+          </li>-->
+        </ul>
+      </div>
+      <div class="footer-bottom deep-purple darken-3">
+        <div class="copyrightline">Copyright {{ new Date().getFullYear() }} Nearpeer, Inc.</div>
+      </div>
+    </v-footer>
+  </div>
 </template>
 
 <script>
@@ -32,12 +40,15 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.topbor {
+  border-top: 1px solid #fff;
+}
 .footer-area {
   padding: 30px 45px;
   align-items: flex-start;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #292929 !important;
+  // background-color: #292929 !important;
 
   .leftside {
     display: flex;
