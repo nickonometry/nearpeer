@@ -2,7 +2,7 @@
   <div>
     <div class="hero__image">
       <div class="hero__text">
-        <h1 style="font-size:50px">Contact Us</h1>
+        <h1>Contact Us</h1>
       </div>
     </div>
     <section class="inputform" v-if="formvis">
@@ -279,6 +279,10 @@ export default {
     left: 50%;
     transform: translate(-50%, -30%);
     color: white;
+
+    h1 {
+      font-size: 50px;
+    }
   }
 }
 
@@ -334,6 +338,15 @@ export default {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+    }
+
+    &__text {
+      top: 40%;
+      h1 {
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 
