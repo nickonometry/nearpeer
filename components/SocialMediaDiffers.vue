@@ -9,8 +9,8 @@
         </div>
       </div>
       <p>
-        …is students’ #1 priority in their decision to enroll
-        Nearpeer addresses this need and delivers higher enrollment
+        …is students’ #1 priority in their decision to enroll.
+        <br />Nearpeer addresses this need and delivers higher enrollment.
       </p>
     </div>
     <div class="sectioncontainer">
