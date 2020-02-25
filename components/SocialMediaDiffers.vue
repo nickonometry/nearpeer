@@ -43,14 +43,12 @@
           <img src="~assets/images/finance.svg" width="45px" alt />
           <div class="comptext">
             <h3>Guaranteed results</h3>
-            <p>
-              Nearpeer is focused on delivering you measurable enrollment lift, and we’ll guarantee it. As your partner, your goals are our goals.
-              Source: Eduventures 2020.
-            </p>
+            <p>Nearpeer is focused on delivering you measurable enrollment lift, and we’ll guarantee it. As your partner, your goals are our goals.</p>
           </div>
         </div>
       </div>
     </div>
+    <div class="sourcefootnote">Source: Eduventures 2020.</div>
   </section>
 </template>
 
@@ -60,6 +58,7 @@ export default {};
 
 <style lang="scss" scoped>
 section {
+  position: relative;
   .heading-container {
     max-width: 950px;
     margin: 48px auto;
@@ -122,6 +121,14 @@ section {
         }
       }
     }
+  }
+  .sourcefootnote {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11px;
+    font-style: italic;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
   }
 }
 
