@@ -128,7 +128,7 @@ export default {
   data: () => ({
     length: 6,
     onboarding: 0,
-    autorun: false
+    autorun: true
   }),
 
   methods: {
