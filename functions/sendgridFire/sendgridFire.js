@@ -7,7 +7,7 @@ exports.handler = async (event, context, callback) => {
   const body = JSON.parse(event.body);
 
   const msg = {
-    to: ['christopher.quinn@nearpeer.net', 'dustin@nearpeer.net'],
+    to: "info@nearpeer.net",
     from: "no-reply@nearpeer.com",
     subject: "Contact Form Submission",
     text: `What May We Help You With: ${body.helpWith}
