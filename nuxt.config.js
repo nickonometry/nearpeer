@@ -151,7 +151,7 @@ export default {
         light: {
           primary: "#4611A9",
           secondary: "#FF4081",
-          accent: "",
+          accent: colors.grey.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
@@ -167,6 +167,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend(config, ctx) {}
   }
 };
