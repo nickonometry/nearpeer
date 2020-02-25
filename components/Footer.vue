@@ -7,7 +7,7 @@
         alt="NearPeer Logo"
       />
       <ul class="footer-links">
-        <li>
+        <!-- <li>
           <nuxt-link to="/higher-enrollment">Higher Enrollment</nuxt-link>
         </li>
         <li>
@@ -18,7 +18,7 @@
         </li>
         <li>
           <nuxt-link to="/about">About</nuxt-link>
-        </li>
+        </li>-->
       </ul>
     </div>
     <div class="footer-bottom grey darken-4">
