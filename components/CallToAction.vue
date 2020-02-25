@@ -22,7 +22,7 @@ section {
 
   .sectioncontainer {
     display: flex;
-    max-width: 580px;
+    max-width: 625px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
@@ -30,12 +30,12 @@ section {
     height: 100%;
   }
   h2 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     color: #fff;
     text-align: center;
     padding-bottom: 30px;
-    line-height: 30px;
+    line-height: 36px;
   }
 }
 </style>
