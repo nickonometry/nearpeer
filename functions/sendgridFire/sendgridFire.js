@@ -21,7 +21,7 @@ Phone: ${body.phone}
 Questions/Comments:${body.comments}`,
     html: `<strong>What May We Help You With:</strong> ${body.helpWith}<br />
     <br />
-    <strong>First Name:</strong> ${body.firstName}<br />
+    <strong>First Name: </strong>${body.firstName}<br />
     <strong>Last Name:</strong> ${body.lastName}<br />
     <strong>Title:</strong> ${body.title}<br />
     <strong>Institution/Organization:</strong> ${body.organization}<br />
