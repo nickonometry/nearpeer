@@ -237,7 +237,7 @@ export default {
           if (this.status == 200) {
             vm.outcome.title = "Message Sent";
             vm.outcome.detail =
-              "Thank you for submitting your message! We will reach out to you as soon as we can.  Thank you for your interest in Nearpeer.";
+              "Thank you for contacting us! We'll get in touch with you shortly.";
             vm.formvis = false;
           } else {
             vm.outcome.title = "Uh oh, we encountered an error...";
