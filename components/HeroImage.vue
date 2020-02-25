@@ -32,11 +32,11 @@ export default {};
 <style lang="scss" scoped>
 .hero-container {
   position: relative;
-  height: 600px;
+  height: 500px;
 
   .slides {
     .slide-1 {
-      height: 600px;
+      height: 500px;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;

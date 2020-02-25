@@ -18,7 +18,7 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/lsu.jpg" alt="Lousiana State University" />
               <div class="right">
-                <p>Higher enrollment through peer engagement, powered by Nearpeer</p>
+                <p class="heading">Higher enrollment through peer engagement, powered by Nearpeer</p>
                 <span>Including</span>
                 <ul>
                   <li>Out-of-state</li>
@@ -33,7 +33,9 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/suu.jpg" alt="Southern Utah University Logo" />
               <div class="right">
-                <p>“Nearpeer reduced our melt with out-of-state students, and other high-melt populations.</p>
+                <p
+                  class="heading"
+                >“Nearpeer reduced our melt with out-of-state students, and other high-melt populations.</p>
 
                 <p>
                   Our students using Nearpeer are much more likely to enroll. That’s why I want every incoming student to
@@ -50,8 +52,12 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/umo.jpg" alt="University of Maine Logo" />
               <div class="right">
-                <p>Higher enrollment & outcomes with Nearpeer</p>
-                <p>↑ yield ↓melt ↑ persistence</p>
+                <p class="heading">Higher enrollment & outcomes with Nearpeer</p>
+                <p style="display: flex; align-items: center;">
+                  <v-icon>mdi-arrow-up-bold</v-icon>yield
+                  <v-icon>mdi-arrow-down-bold</v-icon>melt
+                  <v-icon>mdi-arrow-up-bold</v-icon>persistence
+                </p>
                 <p>$1+ million lift in tuition revenue</p>
               </div>
             </div>
@@ -60,7 +66,7 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/rnl.jpg" alt="Ruffalo Noel Levitz logo" />
               <div class="right">
-                <p>
+                <p class="heading">
                   Ruffalo Noel Levitz & Nearpeer
                   form strategic partnership to improve enrollment yield & reduce melt
                 </p>
@@ -76,7 +82,7 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/time.jpg" alt="Contact us today" />
               <div class="right">
-                <p>
+                <p class="heading">
                   There’s still time to increase
                   your 2020 class with Nearpeer!
                 </p>
@@ -94,7 +100,7 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/protection.jpg" alt="Nearpeer logo" />
               <div class="right">
-                <p>Protect your incoming class today</p>
+                <p class="heading">Protect your incoming class today</p>
 
                 <p>Nearpeer accelerates incoming students’ connection & commitment to your institution</p>
 
@@ -168,9 +174,18 @@ export default {
     }
 
     .right {
+      .heading {
+        font-size: 18px;
+        font-weight: bold;
+      }
       p {
         font-size: 18px;
         line-height: 28px;
+
+        span {
+          font-weight: 900;
+          font-size: 24px;
+        }
       }
 
       ul li {
