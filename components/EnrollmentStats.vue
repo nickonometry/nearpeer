@@ -7,7 +7,7 @@
         <span>enroll</span>
       </h2>
       <p>Measurement based on 2019 data from over 5,000 deposited students at a Nearpeer partner institution, and measured by comparing Fall 2019 enrollment status of Nearpeer users vs. non-users after controlling for income level (deposit waiver), state residency, gender, race (white/non-white), student orientation attendance, and more.</p>
-      <img src="~assets/images/4bubble.png" />
+      <img src="~assets/images/4bubble.png" alt />
     </div>
   </section>
 </template>
