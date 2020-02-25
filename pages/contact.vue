@@ -2,7 +2,7 @@
   <div>
     <div class="hero__image">
       <div class="hero__text">
-        <h1 style="font-size:50px">Contact</h1>
+        <h1 style="font-size:50px">Contact Us</h1>
       </div>
     </div>
     <section class="inputform" v-if="formvis">

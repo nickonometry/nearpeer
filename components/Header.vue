@@ -10,7 +10,7 @@
     ></nuxt-link>
     <v-spacer />
     <div class="nav-container" v-if="showNav">
-      <nuxt-link
+      <!-- <nuxt-link
         to="/higher-enrollment"
         class="navlink deep-purple--text text--darken-3"
       >Higher Enrollment</nuxt-link>
@@ -22,7 +22,7 @@
         to="/what-is-near-peer"
         class="navlink deep-purple--text text--darken-3"
       >What is Nearpeer?</nuxt-link>
-      <nuxt-link to="/about" class="navlink deep-purple--text text--darken-3">About</nuxt-link>
+      <nuxt-link to="/about" class="navlink deep-purple--text text--darken-3">About</nuxt-link>-->
       <div class="navlink--contact">
         <v-btn
           to="/contact"
