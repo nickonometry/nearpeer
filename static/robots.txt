@@ -8,3 +8,5 @@ Disallow: /student-success
 Disallow: /what-is-nearpeer
 Allow: /index
 Allow: /contact
+
+Sitemap: https://www.nearpeer.com/sitemap.xml
