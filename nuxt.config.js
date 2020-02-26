@@ -20,6 +20,10 @@ export default {
         hid: "description",
         name: "description",
         content: `Universities partner with Nearpeer to achieve higher enrollment. Nearpeer is the best way for college students to find and engage peers - creating community, sense of belonging, and higher commitment to their college.`
+      },
+      {
+        property: "og:image",
+        content: "/images/purple_og.png"
       }
     ],
     link: [
