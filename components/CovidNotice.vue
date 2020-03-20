@@ -1,6 +1,6 @@
 <template>
   <section class="covid">
-    <v-dialog v-model="dialog" max-width="800px" width="90%" scrollable="true">
+    <v-dialog v-model="dialog" max-width="900px" width="90%" scrollable="true">
       <template v-slot:activator="{ on }">
         <div class="covidcontainer">
           <div class="leftie">
@@ -22,28 +22,26 @@
           <div class="letterheader">
             <img src="/images/nearpeer_logo.svg" />
             <div class="letright">
-              Nearpeer, Inc.
-              <br />63 Federal St.
-              <br />Portland, ME 04101
+              <a href="/contact">Click here to contact us</a>
             </div>
           </div>
-          <h2>RE: ENROLLMENT CONTINGENCY PLANNING</h2>
+          <h2>RE: COVID-19 and ENROLLMENT CONTIGENCY PLANNING</h2>
           <div class="letterbody">
             <p>March 17, 2020</p>
             <p>Dear Higher Education Leaders</p>
-            <p>Like you, the safety of students and staff is our highest concern. We also realize that uncertainty re: COVID-19 is challenging as it relates to your summer orientation and Fall 2020 class size. Nearpeer can help you get in front of that issue.</p>
-            <p>Nearpeer fills an important void in student-to-student engagement, especially if your events are online or streamed (e.g. Zoom, Facebook Live). The result is higher enrollment.</p>
+            <p>Like you, the safety of students and staff is our highest concern. We also realize that uncertainty re: COVID-19 is challenging as it relates to your summer orientation and Fall 2020 class size. Nearpeer can help you get in front of this issue.</p>
+            <p>Nearpeer fills an important void in student-to-student engagement that is missing when your events move online or are streamed (e.g., Zoom, Facebook Live). With Nearpeer, the result is higher enrollment.</p>
             <p
               class="quote"
-            >"With Nearpeer, our students are more likely to enroll. Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay connected for the Fall."</p>
+            >"Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay committed for the Fall."</p>
             <p
               class="quotefrom"
             >Brandon Wright, AVP, Enrollment Management at Southern Utah University</p>
-            <p>Nearpeer is unlike anything you're doing today. Incoming students love using it to find, connect, and engage with classmates, regardless of location. This creates a sense of belonging, inclusion, and community. That's why students who use Nearpeer are 6X more likely to enroll - even if they haven't set foot on campus for orientation</p>
-            <p>We know results matter and, as a leader, you're likely under unprecedented pressure right now. That's why we guarantee results - and we make rollout fast and easy. Really.</p>
+            <p>Nearpeer is unlike anything you’re doing today. Incoming students love using it to find, connect, and engage with classmates – which is even more important if they can’t come to campus. This creates a sense of belonging, inclusion, and community. That’s why students who use Nearpeer are 6X more likely to enroll.</p>
+            <p>We know results matter and, as a leader, you’re likely under unprecedented pressure right now. That’s why we guarantee results - and we make rollout fast and easy. Really.</p>
             <p>
               Interested in learning more?
-              <a href="/contact">Drop us a message here</a>. We'll follow up quickly - and respect your time. We'd look forward to exploring how we may serve you and your students for a successful 2020. Be safe.
+              <a href="/contact">Drop us a message here</a>. We’ll respond quick and respect you time. Be safe.
             </p>
             <p>Best regards,</p>
             <img class="dustinsig" src="~assets/images/dustinsig.svg" />
@@ -85,8 +83,6 @@ export default {
       max-width: 50%;
     }
     .letright {
-      font-size: 13px;
-      color: #939393;
     }
   }
   h2 {
