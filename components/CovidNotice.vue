@@ -25,7 +25,7 @@
               <a href="/contact">Click here to contact us</a>
             </div>
           </div>
-          <h2>RE: COVID-19 and ENROLLMENT CONTIGENCY PLANNING</h2>
+          <h2>RE: COVID-19 and ENROLLMENT CONTINGENCY PLANNING</h2>
           <div class="letterbody">
             <p>March 17, 2020</p>
             <p>Dear Higher Education Leaders</p>
