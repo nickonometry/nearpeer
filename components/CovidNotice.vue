@@ -32,7 +32,7 @@
             <p>March 17, 2020</p>
             <p>Dear Higher Education Leaders</p>
             <p>Like you, the safety of students and staff is our highest concern. We also realize that uncertainty re: COVID-19 is challenging as it relates to your summer orientation and Fall 2020 class size. Nearpeer can help you get in front of that issue.</p>
-            <p>Nearpeer fills an important void in student-to-student engagement, especially if your events are online or streamed (e.g. Zoom, Facebook Live). The result is higher enrollment</p>
+            <p>Nearpeer fills an important void in student-to-student engagement, especially if your events are online or streamed (e.g. Zoom, Facebook Live). The result is higher enrollment.</p>
             <p
               class="quote"
             >"With Nearpeer, our students are more likely to enroll. Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay connected for the Fall."</p>
@@ -95,6 +95,22 @@ export default {
   }
   .letterbody {
     padding: 0 5%;
+    .quote {
+      color: #4611a9;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+      max-width: 75%;
+      margin: 20px auto 15px;
+    }
+    .quotefrom {
+      color: #4611a9;
+      font-style: italic;
+      font-weight: bold;
+      text-align: right;
+      font-size: 13px;
+      max-width: 95%;
+    }
     .dustinsig {
       width: 230px;
     }
