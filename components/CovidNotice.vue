@@ -8,7 +8,7 @@
               New students can't come to campus?
               <br />Nearpeer fills the void.
             </h3>
-            <p>"Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay committed fo the fall."</p>
+            <p>"Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay committed for the fall."</p>
             <h6>
               -Brandon Wright, AVP, Enrollment Management
               <br />Southern Utah University
