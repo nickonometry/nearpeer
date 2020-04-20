@@ -41,7 +41,7 @@
             <p>We know results matter and, as a leader, you’re likely under unprecedented pressure right now. That’s why we guarantee results - and we make rollout fast and easy. Really.</p>
             <p>
               Interested in learning more?
-              <a href="/contact">Drop us a message here</a>. We’ll respond quick and respect you time. Be safe.
+              <a href="/contact">Drop us a message here</a>. We’ll respond quick and respect your time. Be safe.
             </p>
             <p>Best regards,</p>
             <img class="dustinsig" src="~assets/images/dustinsig.svg" />
