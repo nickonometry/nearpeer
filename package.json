@@ -11,6 +11,7 @@
     "generate": "nuxt generate && cd functions/sendgridFire && npm install"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "nuxt": "^2.0.0",
     "vuelidate": "^0.7.5"
   },

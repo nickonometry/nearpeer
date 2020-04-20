@@ -1,5 +1,26 @@
 <template>
   <div>
+    <v-dialog v-model="pkDialog" width="500">
+      <v-card>
+        <v-card-title class="headline grey lighten-2" primary-title>Attention</v-card-title>
+
+        <v-card-text style="padding:16px;">
+          Visitors from Pakistan: You may be looking for
+          <a
+            href="https://www.nearpeer.org/landing"
+            target="_blank"
+          >Nearpeer.org</a>, as we do not currently serve Pakistan. Thank you.
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="pkDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
     <div class="hero__image">
       <div class="hero__text">
         <h1>Contact Us</h1>
@@ -117,6 +138,7 @@
 <script>
 import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
+import axios from "axios";
 
 export default {
   mixins: [validationMixin],
@@ -145,6 +167,7 @@ export default {
     email: "",
     helpWith: "",
     comments: "",
+    pkDialog: false,
     submitStatus: "unsubmitted",
     outcome: {
       title: "Uh oh, something went wrong",
@@ -152,6 +175,11 @@ export default {
     }
   }),
 
+  mounted() {
+    axios
+      .get("https://extreme-ip-lookup.com/json/")
+      .then(response => this.detectLocation(response.data.countryCode || null));
+  },
   computed: {
     firstNameErrors() {
       const errors = [];
@@ -199,6 +227,15 @@ export default {
   },
 
   methods: {
+    detectLocation(countryCode) {
+      if (countryCode == null) {
+        return;
+      } else if (countryCode.toLowerCase() == "pk") {
+        this.pkDialog = true;
+      } else {
+        return;
+      }
+    },
     submit() {
       let vm = this;
       vm.$v.$touch();
@@ -238,7 +275,6 @@ export default {
 
       xhr.addEventListener("readystatechange", function() {
         if (this.readyState === 4) {
-          console.log(this.status);
           if (this.status == 200) {
             vm.outcome.title = "Message Sent";
             vm.outcome.detail =
