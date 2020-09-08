@@ -31,24 +31,6 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/time.jpg" alt="Contact us today" />
-              <div class="right">
-                <p class="heading">
-                  There’s still time to increase
-                  your 2020 class with Nearpeer!
-                </p>
-
-                <p>
-                  Easy to rollout, effective, guaranteed
-                  to reduce melt and improve yield
-                </p>
-
-                <p>Contact us today</p>
-              </div>
-            </div>
-          </v-window-item>
-          <v-window-item class="slide-container">
-            <div class="carousel-inner">
               <img src="/images/homepage-slider/suu.jpg" alt="Southern Utah University Logo" />
               <div class="right">
                 <p
