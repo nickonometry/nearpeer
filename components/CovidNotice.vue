@@ -27,10 +27,10 @@
           </div>
           <h2>RE: COVID-19 and ENROLLMENT CONTINGENCY PLANNING</h2>
           <div class="letterbody">
-            <p>March 17, 2020</p>
+            <p>September 8, 2020</p>
             <p>Dear Higher Education Leaders</p>
-            <p>Like you, the safety of students and staff is our highest concern. We also realize that uncertainty re: COVID-19 is challenging as it relates to your summer orientation and Fall 2020 class size. Nearpeer can help you get in front of this issue.</p>
-            <p>Nearpeer fills an important void in student-to-student engagement that is missing when your events move online or are streamed (e.g., Zoom, Facebook Live). With Nearpeer, the result is higher enrollment.</p>
+            <p>Like you, the safety of students and staff is our highest concern. We also realize that uncertainty re: COVID-19 is challenging as it relates to your 2020-2021 academic year underway, and your incoming Fall 2021 class. Nearpeer can help.</p>
+            <p>Nearpeer fills an important void in student-to-student engagement created when on-campus engagement is restricted, or it moves entirely online. With Nearpeer, the result is higher engagement, enrollment, and retention.</p>
             <p
               class="quote"
             >"Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay committed for the fall."</p>
