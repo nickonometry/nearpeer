@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /images
+Disallow: /site-icons
+Disallow: /README.md
+Disallow: /about
+Disallow: /higher-enrollment
+Disallow: /student-success
+Disallow: /what-is-nearpeer
+Allow: /index
+Allow: /contact
+
+Sitemap: https://www.nearpeer.com/sitemap.xml

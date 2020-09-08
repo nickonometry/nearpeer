@@ -6,8 +6,7 @@ export default {
     htmlAttrs: {
       lang: "en"
     },
-    titleTemplate: "%s - " + process.env.npm_package_name,
-    title: process.env.npm_package_name || "Nearpeer.com",
+    titleTemplate: "%sNearpeer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -20,7 +19,11 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: `Universities partner with Nearpeer to achieve higher enrollment. Nearpeer is the best way for college students to find and engage peers - creating community, sense of belonging, and higher commitment to their college.`
+      },
+      {
+        property: "og:image",
+        content: "/images/purple_og.png"
       }
     ],
     link: [
@@ -104,7 +107,7 @@ export default {
         innerHTML: `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'UA-158923839-1');`
       }
     ],
@@ -152,7 +155,7 @@ export default {
         light: {
           primary: "#4611A9",
           secondary: "#FF4081",
-          accent: "",
+          accent: colors.grey.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

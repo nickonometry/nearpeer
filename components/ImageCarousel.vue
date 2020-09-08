@@ -31,24 +31,6 @@
           </v-window-item>
           <v-window-item class="slide-container">
             <div class="carousel-inner">
-              <img src="/images/homepage-slider/time.jpg" alt="Contact us today" />
-              <div class="right">
-                <p class="heading">
-                  There’s still time to increase
-                  your 2020 class with Nearpeer!
-                </p>
-
-                <p>
-                  Easy to rollout, effective, guaranteed
-                  to reduce melt and improve yield
-                </p>
-
-                <p>Contact us today</p>
-              </div>
-            </div>
-          </v-window-item>
-          <v-window-item class="slide-container">
-            <div class="carousel-inner">
               <img src="/images/homepage-slider/suu.jpg" alt="Southern Utah University Logo" />
               <div class="right">
                 <p
@@ -72,8 +54,8 @@
               <img src="/images/homepage-slider/rnl.jpg" alt="Ruffalo Noel Levitz logo" />
               <div class="right">
                 <p class="heading">
-                  Ruffalo Noel Levitz & Nearpeer
-                  form strategic partnership to improve enrollment yield & reduce melt
+                  Ruffalo Noel Levitz &amp; Nearpeer
+                  form strategic partnership to improve enrollment yield &amp; reduce melt
                 </p>
 
                 <p>
@@ -87,7 +69,7 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/umo.jpg" alt="University of Maine Logo" />
               <div class="right">
-                <p class="heading">Higher enrollment & outcomes with Nearpeer</p>
+                <p class="heading">Higher enrollment &amp; outcomes with Nearpeer</p>
                 <p style="display: flex; align-items: center;">
                   <v-icon>mdi-arrow-up-bold</v-icon>yield
                   <v-icon>mdi-arrow-down-bold</v-icon>melt
@@ -102,11 +84,11 @@
             <div class="carousel-inner">
               <img src="/images/homepage-slider/protection.jpg" alt="Nearpeer logo" />
               <div class="right">
-                <p class="heading">Protect your incoming class today</p>
+                <p class="heading">Achieve higher yield</p>
 
-                <p>Nearpeer accelerates incoming students’ connection & commitment to your institution</p>
+                <p>Nearpeer accelerates incoming students’ connection &amp; commitment to your institution</p>
 
-                <p>A strong defense against increased poaching from the 2020 NACAC changes</p>
+                <p>Grow your incoming 2021 class size and defend against poaching</p>
               </div>
             </div>
           </v-window-item>

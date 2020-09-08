@@ -1,6 +1,8 @@
 <template>
   <div>
     <HeroImage />
+    <CovidNotice />
+    <v-divider></v-divider>
     <ImageCarousel />
     <v-divider></v-divider>
 
@@ -22,6 +24,7 @@
 
 <script>
 import HeroImage from "../components/HeroImage";
+import CovidNotice from "../components/CovidNotice";
 import CallToAction from "../components/CallToAction";
 import ImageCarousel from "../components/ImageCarousel";
 import StrategicPartnership from "../components/StrategicPartnership";
@@ -31,6 +34,7 @@ import EnrollmentStats from "../components/EnrollmentStats";
 export default {
   components: {
     HeroImage,
+    CovidNotice,
     CallToAction,
     ImageCarousel,
     StrategicPartnership,

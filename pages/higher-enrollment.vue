@@ -4,4 +4,12 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  head() {
+    return {
+      title: "Higher-Enrollment - "
+    };
+  }
+};
+</script>
