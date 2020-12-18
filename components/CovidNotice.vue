@@ -5,7 +5,7 @@
         <div class="covidcontainer">
           <div class="leftie">
             <h3>
-              New students can't come to campus??
+              New students can't come to campus?
               <br />Nearpeer fills the void.
             </h3>
             <p>
