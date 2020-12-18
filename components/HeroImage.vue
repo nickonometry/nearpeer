@@ -11,16 +11,19 @@
           <span class="underline">engagement</span>
         </h2>
         <p>
-          Universities partner with Nearpeer to achieve higher enrollment.
-          Nearpeer is the best way for college students to find and engage
-          peers “like them” - creating community, sense of belonging,
-          and higher commitment to their college.
+          Universities partner with Nearpeer to improve enrollment, engagement,
+          and the learning experience. Nearpeer is the best way for college
+          students to find and engage peers “like them” - creating community,
+          sense of belonging, and higher commitment to their college.
         </p>
       </div>
       <a href="https://www.nearpeer.net">
         <div class="right-side">
           <img src="/images/np_phone.svg" alt />
-          <p>Are you a student at a Nearpeer partner university? Get the Nearpeer app here!</p>
+          <p>
+            Are you a student at a Nearpeer partner university? Get the Nearpeer
+            app here!
+          </p>
         </div>
       </a>
     </div>
