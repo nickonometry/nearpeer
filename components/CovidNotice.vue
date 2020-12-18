@@ -5,10 +5,14 @@
         <div class="covidcontainer">
           <div class="leftie">
             <h3>
-              New students can't come to campus?
+              New students can't come to campus??
               <br />Nearpeer fills the void.
             </h3>
-            <p>"Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay committed for the fall."</p>
+            <p>
+              "Especially in this unprecedented time of COVID-19, Nearpeer is
+              critical to ensure our incoming students stay committed for the
+              fall."
+            </p>
             <h6>
               -Brandon Wright, AVP, Enrollment Management
               <br />Southern Utah University
@@ -29,26 +33,49 @@
           <div class="letterbody">
             <p>September 8, 2020</p>
             <p>Dear Higher Education Leaders</p>
-            <p>Like you, the safety of students and staff is our highest concern. We also realize that uncertainty re: COVID-19 is challenging as it relates to your 2020-2021 academic year underway, and your incoming Fall 2021 class. Nearpeer can help.</p>
-            <p>Nearpeer fills an important void in student-to-student engagement created when on-campus engagement is restricted, or it moves entirely online. With Nearpeer, the result is higher engagement, enrollment, and retention.</p>
-            <p
-              class="quote"
-            >"Especially in this unprecedented time of COVID-19, Nearpeer is critical to ensure our incoming students stay committed for the fall."</p>
-            <p
-              class="quotefrom"
-            >Brandon Wright, AVP, Enrollment Management at Southern Utah University</p>
-            <p>Nearpeer is unlike anything you’re doing today. Incoming students love using it to find, connect, and engage with classmates – which is even more important if they can’t come to campus. This creates a sense of belonging, inclusion, and community. That’s why students who use Nearpeer are 6X more likely to enroll.</p>
-            <p>We know results matter and, as a leader, you’re likely under unprecedented pressure right now. That’s why we guarantee results - and we make rollout fast and easy. Really.</p>
+            <p>
+              Like you, the safety of students and staff is our highest concern.
+              We also realize that uncertainty re: COVID-19 is challenging as it
+              relates to your 2020-2021 academic year underway, and your
+              incoming Fall 2021 class. Nearpeer can help.
+            </p>
+            <p>
+              Nearpeer fills an important void in student-to-student engagement
+              created when on-campus engagement is restricted, or it moves
+              entirely online. With Nearpeer, the result is higher engagement,
+              enrollment, and retention.
+            </p>
+            <p class="quote">
+              "Especially in this unprecedented time of COVID-19, Nearpeer is
+              critical to ensure our incoming students stay committed for the
+              fall."
+            </p>
+            <p class="quotefrom">
+              Brandon Wright, AVP, Enrollment Management at Southern Utah
+              University
+            </p>
+            <p>
+              Nearpeer is unlike anything you’re doing today. Incoming students
+              love using it to find, connect, and engage with classmates – which
+              is even more important if they can’t come to campus. This creates
+              a sense of belonging, inclusion, and community. That’s why
+              students who use Nearpeer are 6X more likely to enroll.
+            </p>
+            <p>
+              We know results matter and, as a leader, you’re likely under
+              unprecedented pressure right now. That’s why we guarantee results
+              - and we make rollout fast and easy. Really.
+            </p>
             <p>
               Interested in learning more?
-              <a href="/contact">Drop us a message here</a>. We’ll respond quick and respect your time. Be safe.
+              <a href="/contact">Drop us a message here</a>. We’ll respond quick
+              and respect your time. Be safe.
             </p>
             <p>Best regards,</p>
             <img class="dustinsig" src="~assets/images/dustinsig.svg" />
             <p>
               Dustin Manocha
-              <br />Founder &amp; CEO
-              <br />Nearpeer, Inc.
+              <br />Founder &amp; CEO <br />Nearpeer, Inc.
             </p>
           </div>
         </div>
@@ -60,9 +87,9 @@
 export default {
   data() {
     return {
-      dialog: false
+      dialog: false,
     };
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
